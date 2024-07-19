@@ -1,188 +1,54 @@
-/* Reset some default styles */
-body, h1, h2, h3, h4, h5, p, ul, li {
+body, h1, h2, p {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-/* Body and general styles */
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
-    overflow-x: hidden;
-    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
-a {
-    color: #007bff;
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #006400;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: #228b22;
+    border-radius: 4px;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #32cd32;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center; /* Center align content inside .container */
 }
 
-/* Header styles */
-header {
-    background: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center; /* Center align content inside header */
-}
-
-header .logo img {
-    height: 150px; /* Increase the image height */
-    width: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure image behaves like a block element */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-header nav ul li {
-    flex: 1 1 calc(25% - 10px); /* Adjusts width for four items per row */
-    margin-bottom: 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    padding: 10px 20px;
-    display: block;
-    background: #333;
-    border-radius: 4px;
+footer {
+    background-color: #006400;
     text-align: center;
-    transition: background 0.3s;
+    padding: 10px;
 }
 
-header nav ul li a:hover {
-    background: #555;
-}
-
-/* Main section styles */
-main {
-    padding: 20px 0;
-    background: #fff;
-    margin-bottom: 40px;
-    text-align: left; /* Align text to the left for better readability */
-}
-
-main h1, main p {
-    margin-bottom: 20px;
-}
-
-/* Image styles */
 img {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
-}
-
-/* Section styles */
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-}
-
-section p {
-    margin-bottom: 10px;
-}
-
-section ul {
-    margin-bottom: 20px;
-}
-
-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative; /* Ensure it stays at the bottom of the content */
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Form styles */
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input[type="submit"] {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background: #0056b3;
-}
-
-/* Custom classes */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 4px;
-}
-
-.btn-primary {
-    background: #007bff;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background: #0056b3;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    header nav ul li {
-        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
-    }
 }
