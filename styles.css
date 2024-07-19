@@ -38,15 +38,18 @@ header {
 }
 
 header .logo img {
-    height: 40px;
+    height: 80px;
 }
 
 header nav ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 header nav ul li {
+    flex: 1 1 calc(25% - 10px); /* Adjusts width for four items per row */
     margin-bottom: 10px;
 }
 
@@ -56,6 +59,7 @@ header nav ul li a {
     display: block;
     background: #333;
     border-radius: 4px;
+    text-align: center;
 }
 
 header nav ul li a:hover {
@@ -152,4 +156,15 @@ form input[type="submit"]:hover {
 
 .btn-primary:hover {
     background: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header nav ul li {
+        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+    }
 }
