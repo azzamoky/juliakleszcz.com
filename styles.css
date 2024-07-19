@@ -9,12 +9,14 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #000;
-    background-color: #fff;
+    color: #333;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 a {
-    color: #000;
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -24,11 +26,11 @@ a:hover {
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center; /* Center align content inside .container */
 }
 
 /* Header styles */
@@ -62,6 +64,7 @@ header nav ul li a {
     background: #333;
     border-radius: 4px;
     text-align: center;
+    transition: background 0.3s;
 }
 
 header nav ul li a:hover {
@@ -72,6 +75,7 @@ header nav ul li a:hover {
 main {
     padding: 20px 0;
     background: #fff;
+    margin-bottom: 40px;
 }
 
 main h1, main p {
@@ -105,9 +109,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative; /* Ensure it stays at the bottom of the content */
     width: 100%;
-    bottom: 0;
 }
 
 footer p {
@@ -132,16 +135,17 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background: #000;
+    background: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background 0.3s;
 }
 
 form input[type="submit"]:hover {
-    background: #333;
+    background: #0056b3;
 }
 
 /* Custom classes */
@@ -152,12 +156,12 @@ form input[type="submit"]:hover {
 }
 
 .btn-primary {
-    background: #000;
+    background: #007bff;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background: #333;
+    background: #0056b3;
 }
 
 /* Responsive styles */
