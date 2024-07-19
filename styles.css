@@ -31,6 +31,7 @@ a:hover {
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center align content inside .container */
 }
 
 /* Header styles */
@@ -38,11 +39,14 @@ header {
     background: #000;
     color: #fff;
     padding: 20px 0;
+    text-align: center; /* Center align content inside header */
 }
 
 header .logo img {
     height: 150px; /* Increase the image height */
     width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image behaves like a block element */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 header nav ul {
@@ -76,10 +80,18 @@ main {
     padding: 20px 0;
     background: #fff;
     margin-bottom: 40px;
+    text-align: left; /* Align text to the left for better readability */
 }
 
 main h1, main p {
     margin-bottom: 20px;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 /* Section styles */
