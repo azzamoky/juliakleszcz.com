@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salesforce Practice Exams - Julia Kleszcz</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/home/salesforce-logo.svg" alt="Salesforce Logo">
+                <img src="images/Julia-Kleszcz.webp" alt="Julia Kleszcz Logo">
             </div>
             <nav>
                 <ul>
@@ -30,81 +31,67 @@
         </div>
     </header>
 
-    <section id="practice-exams">
-        <div class="container">
-            <h2>Salesforce Practice Exams</h2>
-            <p>Welcome to the Salesforce Practice Exams section. Here you will find practice exams designed to help you prepare for your Salesforce certification. These exams cover a variety of topics and will test your knowledge and readiness for the actual certification exams.</p>
-
-            <h3>Practice Exam 1: Salesforce Administrator</h3>
-            <form id="exam1">
-                <h4>Question 1: What is Salesforce?</h4>
+    <main>
+        <div class="        <div class="container">
+            <h1>Salesforce Practice Exams</h1>
+            <p>Test your knowledge with these practice exams to prepare for your Salesforce certification:</p>
+            <img src="images/File 00019.jpg" alt="Practice Exams">
+            <form id="quizForm">
+                <h2>Question 1: What is Salesforce?</h2>
                 <label><input type="radio" name="q1" value="a"> A CRM platform</label><br>
                 <label><input type="radio" name="q1" value="b"> A programming language</label><br>
                 <label><input type="radio" name="q1" value="c"> A database management system</label><br>
 
-                <h4>Question 2: What is the primary function of Salesforce's Sales Cloud?</h4>
+                <h2>Question 2: What is the primary function of Salesforce's Sales Cloud?</h2>
                 <label><input type="radio" name="q2" value="a"> Marketing automation</label><br>
                 <label><input type="radio" name="q2" value="b"> Sales process automation</label><br>
                 <label><input type="radio" name="q2" value="c"> Customer support</label><br>
 
-                <h4>Question 3: What is an object in Salesforce?</h4>
+                <h2>Question 3: What is an object in Salesforce?</h2>
                 <label><input type="radio" name="q3" value="a"> A specific type of data like accounts or contacts</label><br>
                 <label><input type="radio" name="q3" value="b"> A piece of code</label><br>
                 <label><input type="radio" name="q3" value="c"> A user profile</label><br>
 
-                <h4>Question 4: Which of the following is a standard object in Salesforce?</h4>
+                <h2>Question 4: Which of the following is a standard object in Salesforce?</h2>
                 <label><input type="radio" name="q4" value="a"> Invoice</label><br>
                 <label><input type="radio" name="q4" value="b"> Opportunity</label><br>
                 <label><input type="radio" name="q4" value="c"> Employee</label><br>
 
-                <h4>Question 5: What does a role hierarchy control in Salesforce?</h4>
+                <h2>Question 5: What does a role hierarchy control in Salesforce?</h2>
                 <label><input type="radio" name="q5" value="a"> Record visibility</label><br>
                 <label><input type="radio" name="q5" value="b"> User permissions</label><br>
                 <label><input type="radio" name="q5" value="c"> Field accessibility</label><br>
 
-                <h4>Question 6: What is a custom object in Salesforce?</h4>
+                <h2>Question 6: What is a custom object in Salesforce?</h2>
                 <label><input type="radio" name="q6" value="a"> An object defined by the user</label><br>
                 <label><input type="radio" name="q6" value="b"> A standard Salesforce object</label><br>
                 <label><input type="radio" name="q6" value="c"> A predefined role</label><br>
 
-                <h4>Question 7: What is a Salesforce report?</h4>
+                <h2>Question 7: What is a Salesforce report?</h2>
                 <label><input type="radio" name="q7" value="a"> A compiled list of records meeting certain criteria</label><br>
                 <label><input type="radio" name="q7" value="b"> A summary of user activities</label><br>
                 <label><input type="radio" name="q7" value="c"> A detailed object schema</label><br>
 
-                <h4>Question 8: Which tool is used to import data into Salesforce?</h4>
+                <h2>Question 8: Which tool is used to import data into Salesforce?</h2>
                 <label><input type="radio" name="q8" value="a"> Data Loader</label><br>
                 <label><input type="radio" name="q8" value="b"> Data Import Wizard</label><br>
                 <label><input type="radio" name="q8" value="c"> Both A and B</label><br>
 
-                <h4>Question 9: What does Salesforce Chatter enable users to do?</h4>
+                <h2>Question 9: What does Salesforce Chatter enable users to do?</h2>
                 <label><input type="radio" name="q9" value="a"> Communicate and collaborate in real-time</label><br>
                 <label><input type="radio" name="q9" value="b"> Track sales opportunities</label><br>
                 <label><input type="radio" name="q9" value="c"> Automate workflows</label><br>
 
-                <h4>Question 10: What is a validation rule in Salesforce?</h4>
+                <h2>Question 10: What is a validation rule in Salesforce?</h2>
                 <label><input type="radio" name="q10" value="a"> A rule to enforce data integrity</label><br>
                 <label><input type="radio" name="q10" value="b"> A rule to manage user permissions</label><br>
                 <label><input type="radio" name="q10" value="c"> A rule to schedule automated reports</label><br>
 
-                <input type="submit" value="Submit">
+                <input type="button" value="Submit" onclick="checkAnswers()">
             </form>
-
-            <h3>Answer Key</h3>
-            <ul>
-                <li>Question 1: A CRM platform</li>
-                <li>Question 2: Sales process automation</li>
-                <li>Question 3: A specific type of data like accounts or contacts</li>
-                <li>Question 4: Opportunity</li>
-                <li>Question 5: Record visibility</li>
-                <li>Question 6: An object defined by the user</li>
-                <li>Question 7: A compiled list of records meeting certain criteria</li>
-                <li>Question 8: Both A and B</li>
-                <li>Question 9: Communicate and collaborate in real-time</li>
-                <li>Question 10: A rule to enforce data integrity</li>
-            </ul>
+            <div id="results"></div>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
