@@ -9,12 +9,12 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #000;
+    background-color: #fff;
 }
 
 a {
-    color: #0070d2;
+    color: #000;
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 
 /* Header styles */
 header {
-    background: #0070d2;
+    background: #000;
     color: #fff;
     padding: 20px 0;
 }
@@ -42,29 +42,30 @@ header .logo img {
 }
 
 header nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: block;
+    width: 100%;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 header nav ul li a {
     color: #fff;
     padding: 10px 20px;
+    display: block;
+    background: #333;
+    border-radius: 4px;
 }
 
 header nav ul li a:hover {
-    background: #005bb5;
-    border-radius: 4px;
+    background: #555;
 }
 
 /* Main section styles */
 main {
     padding: 20px 0;
-    background: #f4f4f4;
+    background: #fff;
 }
 
 main h1, main p {
@@ -94,7 +95,7 @@ section ul li {
 
 /* Footer styles */
 footer {
-    background: #0070d2;
+    background: #000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -140,7 +141,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background: #0070d2;
+    background: #000;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -149,7 +150,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #005bb5;
+    background: #333;
 }
 
 /* Custom classes */
@@ -160,10 +161,10 @@ form input[type="submit"]:hover {
 }
 
 .btn-primary {
-    background: #0070d2;
+    background: #000;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background: #005bb5;
+    background: #333;
 }
