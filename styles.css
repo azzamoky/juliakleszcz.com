@@ -42,8 +42,8 @@ header .logo img {
 }
 
 header nav ul {
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul li {
@@ -106,21 +106,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
 }
 
 /* Form styles */
