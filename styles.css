@@ -31,3 +31,10 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .navbar a {
+        flex: 1 0 100%;
+        margin: 5px 0;
+    }
+}
