@@ -3,14 +3,22 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F4F6F9; /* Light background color for contrast */
+}
+
+.header-image img, .footer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333;
+    background-color: #00A1E0; /* Salesforce Blue */
     width: 100%;
+    padding: 10px 0;
 }
 
 .navbar-row {
@@ -31,13 +39,18 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #005f80;
+    color: white;
 }
 
 .content {
     padding: 20px;
     text-align: center;
+}
+
+.footer-image {
+    text-align: center;
+    padding: 20px 0;
 }
 
 @media (max-width: 600px) {
