@@ -7,9 +7,17 @@ body {
 
 .navbar {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+}
+
+.navbar-row {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #333;
+    width: 100%;
 }
 
 .navbar a {
@@ -17,9 +25,9 @@ body {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-    flex: 1 0 150px;
     margin: 5px;
     box-sizing: border-box;
+    flex: 1 0 calc(16.66% - 10px); /* Adjust the width of each tab */
 }
 
 .navbar a:hover {
@@ -34,7 +42,12 @@ body {
 
 @media (max-width: 600px) {
     .navbar a {
-        flex: 1 0 100%;
-        margin: 5px 0;
+        flex: 1 0 calc(50% - 10px); /* Two tabs per row on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        flex: 1 0 calc(100% - 10px); /* One tab per row on very small screens */
     }
 }
