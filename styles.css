@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #333;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -13,6 +14,7 @@ body {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    flex: 1 0 16%; /* Adjust this value to fit 6 items per row */
 }
 
 .navbar a:hover {
