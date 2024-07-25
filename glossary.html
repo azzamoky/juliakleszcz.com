@@ -2,34 +2,416 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glossary</title>
+    <title>Salesforce Glossary</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header-image">
+        <img src="images/title.jpg" alt="Title Header Image">
+    </div>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume and Credentials</a>
-        <a href="salesforce.html">Getting Started with Salesforce</a>
-        <a href="tutorials.html">Step by Step Tutorials</a>
-        <a href="videos.html">Video Tutorials</a>
-        <a href="templates.html">Templates</a>
-        <a href="glossary.html">Glossary</a>
-        <a href="study-guides.html">Certification Study Guides</a>
-        <a href="exams.html">Practice Exams</a>
-        <a href="resources.html">Helpful Resources</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact Me</a>
+        <div class="navbar-row">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume and Credentials</a>
+            <a href="salesforce.html">Getting Started with Salesforce</a>
+            <a href="tutorials.html">Step by Step Tutorials</a>
+            <a href="videos.html">Video Tutorials</a>
+            <a href="templates.html">Templates</a>
+        </div>
+        <div class="navbar-row">
+            <a href="glossary.html">Glossary</a>
+            <a href="study-guides.html">Certification Study Guides</a>
+            <a href="exams.html">Practice Exams</a>
+            <a href="resources.html">Helpful Resources</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
     </div>
     <div class="content">
-        <h1>Glossary</h1>
-        <p>This is the glossary page.</p>
+        <h1>Salesforce Terms Glossary</h1>
+        <p>Welcome to the Salesforce Terms Glossary! This comprehensive guide is here to help you understand the various terms and concepts you'll encounter as you navigate Salesforce. Whether you're a new user or need a refresher, this glossary is designed to provide clear and detailed explanations. Let's dive in!</p>
+
+        <h2>A</h2>
+
+        <h3>Account</h3>
+        <p>An Account in Salesforce represents a business entity or organization that you have a relationship with. Accounts can be customers, partners, or competitors. Each Account record contains key information such as the company name, address, industry, and contact details. Think of it as the cornerstone of your business relationships.</p>
+
+        <h3>Activity</h3>
+        <p>Activities in Salesforce are tasks, events, and logged calls that you perform. They help track interactions and engagements with customers and prospects. Activities can be associated with various objects, including Accounts, Contacts, Leads, and Opportunities. Keeping track of your activities ensures you stay organized and follow up on important actions.</p>
+
+        <h3>AppExchange</h3>
+        <p>AppExchange is Salesforce’s marketplace for third-party applications and integrations. It offers a wide range of solutions to extend Salesforce’s functionality, from marketing automation and project management tools to industry-specific apps. Browsing AppExchange is like shopping for new gadgets to enhance your Salesforce experience.</p>
+
+        <h3>API (Application Programming Interface)</h3>
+        <p>An API in Salesforce allows different software applications to communicate with each other. Salesforce offers several APIs, including REST API, SOAP API, and Bulk API. These APIs enable developers to integrate Salesforce with other systems, automate processes, and extend its capabilities. Think of APIs as the translators that help different software speak the same language.</p>
+
+        <h3>Approval Process</h3>
+        <p>An Approval Process in Salesforce automates the routing of records for approval based on predefined criteria. It ensures that records are reviewed and approved by the right people before certain actions are taken. Approval Processes help maintain control and accountability within your organization. They’re like the gatekeepers ensuring quality and compliance.</p>
+
+        <h2>B</h2>
+
+        <h3>Batch Apex</h3>
+        <p>Batch Apex in Salesforce is used to process large volumes of records asynchronously. It’s ideal for tasks that require heavy processing, such as data cleansing, complex calculations, or integrating with external systems. Batch Apex jobs are executed in smaller chunks, making it possible to handle large datasets without hitting governor limits.</p>
+
+        <h3>Big Object</h3>
+        <p>Big Objects are designed to store and manage massive amounts of data on the Salesforce platform. They’re optimized for performance and scalability, making them ideal for archiving historical data or storing logs. Big Objects allow you to retain important information without affecting the performance of your main data structures.</p>
+
+        <h3>Boolean</h3>
+        <p>Boolean is a data type in Salesforce that can only have two values: true or false. It’s often used in formulas, validation rules, and Apex code to make logical decisions based on conditions. Booleans are the yes-or-no questions of the Salesforce world, helping you control the flow of processes and actions.</p>
+
+        <h3>Bulk API</h3>
+        <p>The Bulk API in Salesforce is designed for handling large data sets by allowing asynchronous data processing. It’s ideal for importing, exporting, and deleting large volumes of records. The Bulk API processes data in batches, making it more efficient for managing extensive data operations compared to standard APIs.</p>
+
+        <h2>C</h2>
+
+        <h3>Campaign</h3>
+        <p>A Campaign in Salesforce represents a marketing initiative aimed at generating leads and opportunities. Campaigns can include various activities such as emails, advertisements, events, and social media efforts. You can track the effectiveness of your campaigns by measuring responses, conversions, and revenue generated.</p>
+
+        <h3>Case</h3>
+        <p>A Case in Salesforce is a record used to track and manage customer support issues. Cases can be created from emails, web forms, or manually by support agents. They help ensure customer issues are addressed promptly and efficiently. Managing Cases effectively improves customer satisfaction and retention.</p>
+
+        <h3>Chatter</h3>
+        <p>Chatter is Salesforce’s enterprise social network, designed to enhance collaboration within your organization. It allows users to post updates, share files, and join groups. Chatter integrates seamlessly with Salesforce records, enabling contextual conversations around specific accounts, opportunities, and projects. It’s like having a social media platform tailored for business productivity.</p>
+
+        <h3>Contact</h3>
+        <p>A Contact in Salesforce represents an individual associated with an Account. Contacts are the people you interact with within the organizations you do business with. Each Contact record includes information such as name, job title, email, and phone number. Managing Contacts helps you keep track of your relationships and communication history.</p>
+
+        <h3>Custom Object</h3>
+        <p>A Custom Object in Salesforce is an object you create to store information specific to your business needs. Unlike Standard Objects, which are provided by Salesforce, Custom Objects can be tailored to fit unique requirements. They allow you to extend Salesforce’s data model and capture data that’s critical to your operations.</p>
+
+        <h3>Custom Field</h3>
+        <p>A Custom Field in Salesforce is a field you create to store specific information on Standard or Custom Objects. Custom Fields allow you to capture data that’s unique to your business processes. You can choose from various data types, including text, number, date, and picklist. Custom Fields help you tailor Salesforce to fit your organization’s needs.</p>
+
+        <h2>D</h2>
+
+        <h3>Dashboard</h3>
+        <p>A Dashboard in Salesforce is a visual representation of your reports, providing a real-time view of key metrics and performance indicators. Dashboards can include charts, graphs, tables, and gauges. They help you monitor your business at a glance and make informed decisions. Think of Dashboards as your business’s command center.</p>
+
+        <h3>Data Loader</h3>
+        <p>Data Loader is a client application used to import, export, update, and delete Salesforce data. It supports large-scale data operations and provides a user-friendly interface for managing data tasks. Data Loader is a powerful tool for administrators and developers to handle bulk data processes efficiently.</p>
+
+        <h3>Data.com</h3>
+        <p>Data.com was a Salesforce data enrichment service that provided access to a vast database of company and contact information. It helped users enhance the quality of their CRM data by filling in missing details and keeping records up to date. Note that Data.com was retired in 2019, but its spirit lives on in other data enrichment tools.</p>
+
+        <h3>Deployment</h3>
+        <p>Deployment in Salesforce refers to the process of moving customizations and configurations from one Salesforce environment to another, typically from a sandbox to production. Deployment can be done using tools like Change Sets, Salesforce CLI, and third-party applications. It ensures that your customizations are safely and accurately applied to your live environment.</p>
+
+        <h3>Dynamic Dashboards</h3>
+        <p>Dynamic Dashboards in Salesforce allow you to create personalized dashboards that display data relevant to the logged-in user. They’re useful for managers and executives who need to view team performance and individual metrics. Dynamic Dashboards provide tailored insights without the need to create multiple dashboards for different users.</p>
+
+        <h2>E</h2>
+
+        <h3>Einstein Analytics</h3>
+        <p>Einstein Analytics, now known as Tableau CRM, is Salesforce’s advanced analytics platform. It provides powerful data visualization, exploration, and predictive analytics capabilities. Einstein Analytics helps you uncover insights, predict outcomes, and make data-driven decisions. It’s like having a data scientist at your fingertips.</p>
+
+        <h3>Einstein AI</h3>
+        <p>Einstein AI is Salesforce’s artificial intelligence technology embedded within the platform. It        <p>offers features like predictive scoring, natural language processing, and image recognition. Einstein AI helps you automate processes, gain deeper insights, and deliver personalized experiences. It’s like having a smart assistant that learns and improves over time.</p>
+
+        <h3>Email-to-Case</h3>
+        <p>Email-to-Case is a Salesforce feature that automatically creates Cases from incoming customer emails. It helps streamline the process of logging and tracking customer support issues. By converting emails into Cases, your support team can manage and resolve issues more efficiently.</p>
+
+        <h3>Event</h3>
+        <p>An Event in Salesforce is a calendar item representing a meeting, call, or other scheduled activities. Events help you manage your time and keep track of important engagements. They can be associated with records like Accounts, Contacts, and Opportunities, ensuring you stay on top of your commitments.</p>
+
+        <h3>External Object</h3>
+        <p>External Objects in Salesforce allow you to integrate data from external systems without importing it into Salesforce. They use the Salesforce Connect feature to create real-time links to external data sources, such as databases or web services. External Objects enable you to view and interact with external data within the Salesforce interface.</p>
+
+        <h2>F</h2>
+
+        <h3>Field</h3>
+        <p>A Field in Salesforce is a data entry point on an object that stores specific information. Fields can be standard (provided by Salesforce) or custom (created by you). Each field has a data type, such as text, number, date, or picklist, determining the kind of data it can store. Fields are essential for capturing and organizing information within Salesforce records.</p>
+
+        <h3>Field-Level Security</h3>
+        <p>Field-Level Security in Salesforce controls user access to individual fields within an object. It allows you to specify which fields users can view or edit based on their profile or permission sets. Field-Level Security helps protect sensitive information and ensures that users only see the data relevant to their role.</p>
+
+        <h3>Flow</h3>
+        <p>Flow in Salesforce is an automation tool that allows you to create complex business processes using a visual interface. With Flow, you can design guided workflows, automate tasks, and integrate with external systems. Flows can be triggered by user actions, record changes, or schedule. They’re like the Swiss Army knife of Salesforce automation.</p>
+
+        <h3>Forecasting</h3>
+        <p>Forecasting in Salesforce helps sales teams predict future sales revenue based on their pipeline of opportunities. It provides a way to track sales progress and make informed decisions about resource allocation and goal setting. Forecasts can be adjusted as opportunities move through different stages, giving you a real-time view of your sales outlook.</p>
+
+        <h2>G</h2>
+
+        <h3>Global Actions</h3>
+        <p>Global Actions in Salesforce are quick actions that are accessible from anywhere within the Salesforce app. They allow users to create records, log calls, and perform other tasks without navigating to a specific object. Global Actions help streamline workflows and save time by providing easy access to frequently used functions.</p>
+
+        <h3>Global Search</h3>
+        <p>Global Search is a powerful search tool in Salesforce that allows users to find records, documents, and other items across the entire organization. It’s like having a search engine within Salesforce, helping you quickly locate the information you need.</p>
+
+        <h3>Governor Limits</h3>
+        <p>Governor Limits in Salesforce are runtime limits enforced by the platform to ensure efficient resource usage and maintain system performance. These limits include restrictions on the number of API calls, database queries, and the execution time of Apex code. Understanding and adhering to Governor Limits is crucial for developers to create scalable and efficient applications.</p>
+
+        <h3>Group</h3>
+        <p>A Group in Salesforce is a collection of users that can be used for sharing records and collaboration. Groups can be public, private, or unlisted, and they help streamline the process of granting access to multiple users at once. Using Groups, you can manage access and communication more efficiently within your organization.</p>
+
+        <h2>H</h2>
+
+        <h3>Hierarchical Relationship</h3>
+        <p>A Hierarchical Relationship in Salesforce is a special type of lookup relationship available only for the user object. It allows you to create a direct link between users, typically used to represent a management chain or reporting structure within your organization.</p>
+
+        <h3>Home Tab</h3>
+        <p>The Home Tab in Salesforce serves as the main dashboard where users can see key metrics, tasks, events, and other important information. It provides a quick overview of the day’s activities and helps users stay organized and focused on their priorities.</p>
+
+        <h3>HTTP Callouts</h3>
+        <p>HTTP Callouts in Salesforce allow Apex code to make HTTP requests to external web services. This functionality enables Salesforce to integrate with third-party systems, retrieve external data, and interact with APIs. HTTP Callouts are essential for building comprehensive and connected solutions.</p>
+
+        <h2>I</h2>
+
+        <h3>Instance</h3>
+        <p>An Instance in Salesforce refers to a specific Salesforce server where your organization’s data and applications are hosted. Salesforce operates on multiple instances around the world to ensure performance, redundancy, and data security. Each instance is identified by a unique name, such as NA1, EU5, or AP15.</p>
+
+        <h3>Integration</h3>
+        <p>Integration in Salesforce refers to the process of connecting Salesforce with other systems and applications. Integration can be achieved through APIs, middleware, or third-party tools, enabling seamless data exchange and process automation. Effective integration ensures that your Salesforce environment is part of a cohesive and connected IT ecosystem.</p>
+
+        <h3>IP Whitelisting</h3>
+        <p>IP Whitelisting in Salesforce is a security feature that restricts login access to specific IP addresses. By configuring IP whitelists, you can ensure that only users connecting from trusted networks can access Salesforce. This adds an additional layer of security to protect your organization’s data.</p>
+
+        <h3>ISV (Independent Software Vendor)</h3>
+        <p>An ISV in the Salesforce ecosystem is a company that develops and sells software applications built on the Salesforce platform. These applications are often available on AppExchange and provide additional functionality to Salesforce users. Partnering with ISVs allows organizations to extend Salesforce’s capabilities and tailor it to their specific needs.</p>
+
+        <h2>J</h2>
+
+        <h3>Junction Object</h3>
+        <p>A Junction Object in Salesforce is a custom object used to create many-to-many relationships between two other objects. For example, a “Project Assignment” junction object could link “Employee” and “Project” objects, allowing multiple employees to be assigned to multiple projects. Junction Objects are essential for modeling complex relationships in Salesforce.</p>
+
+        <h3>JSON (JavaScript Object Notation)</h3>
+        <p>JSON is a lightweight data interchange format commonly used in web APIs and integrations. In Salesforce, JSON is often used in HTTP Callouts and Apex code to exchange data with external systems. JSON’s simplicity and readability make it a popular choice for data serialization and communication.</p>
+
+        <h2>K</h2>
+
+        <h3>Kanban View</h3>
+        <p>The Kanban View in Salesforce is a visual representation of records in a board format, typically used for managing opportunities, tasks, and other workflows. Records are displayed as cards in columns representing different stages of a process. The Kanban View helps users track progress and prioritize work more effectively.</p>
+
+        <h3>Knowledge Base</h3>
+        <p>A Knowledge Base in Salesforce is a repository of articles, guides, and FAQs designed to help customers and support agents find answers to common questions. Knowledge Base articles can be categorized, searched, and linked to cases, providing a valuable resource for self-service and support.</p>
+
+        <h2>L</h2>
+
+        <h3>Lead</h3>
+        <p>A Lead in Salesforce represents a potential customer who has shown interest in your products or services but has not yet been qualified. Leads can be captured through various channels, such as web forms, events, and marketing campaigns. The lead management process involves nurturing and converting leads into opportunities and accounts.</p>
+
+        <h3>Lightning Experience</h3>
+        <p>Lightning Experience is Salesforce’s modern, user-friendly interface designed to improve productivity and user experience. It includes enhanced features, dynamic components, and a responsive design. Switching to Lightning Experience offers a more intuitive and efficient way to navigate and use Salesforce.</p>
+
+        <h3>List View</h3>
+        <p>A List View in Salesforce is a customizable view that displays records of a particular object in a tabular format. Users can create, filter, and sort List Views to focus on specific subsets of data. List Views are essential for quickly accessing and managing records based on defined criteria.</p>
+
+        <h3>Lookup Relationship</h3>
+        <p>A Lookup Relationship in Salesforce is a type of relationship that links two objects together. Unlike Master-Detail Relationships, Lookup Relationships allow for more flexibility and do not require the related record to exist. They are used to associate records without establishing a strict parent-child dependency.</p>
+
+        <h2>M</h2>
+
+        <h3>Master-Detail Relationship</h3>
+        <p>A Master-Detail Relationship in Salesforce is a type of relationship where the child object’s records depend on the parent object        <p>. In this relationship, the child record inherits the parent’s sharing and security settings. Deleting the parent record also deletes all related child records. Master-Detail Relationships are used to enforce strong dependencies between objects.</p>
+
+        <h3>Metadata</h3>
+        <p>Metadata in Salesforce refers to the data that defines the structure, configuration, and customization of your Salesforce environment. This includes objects, fields, layouts, workflow rules, and more. Metadata-driven architecture allows for easy customization and deployment across different Salesforce instances.</p>
+
+        <h3>Multi-Factor Authentication (MFA)</h3>
+        <p>Multi-Factor Authentication (MFA) in Salesforce is a security measure that requires users to verify their identity using multiple methods, such as a password and a one-time code sent to a mobile device. MFA adds an extra layer of protection to ensure that only authorized users can access Salesforce.</p>
+
+        <h3>MuleSoft</h3>
+        <p>MuleSoft is a leading integration platform acquired by Salesforce that connects applications, data, and devices. It provides tools for building APIs, managing integrations, and enabling data exchange across systems. MuleSoft helps Salesforce customers create connected experiences and automate processes across their IT landscape.</p>
+
+        <h2>N</h2>
+
+        <h3>Named Credentials</h3>
+        <p>Named Credentials in Salesforce simplify the process of making authenticated HTTP callouts to external systems. They store the authentication details and endpoint URLs, allowing developers to make secure callouts without hardcoding sensitive information. Named Credentials improve security and manageability of integrations.</p>
+
+        <h3>Nonprofit Success Pack (NPSP)</h3>
+        <p>The Nonprofit Success Pack (NPSP) is a set of managed packages in Salesforce tailored for nonprofit organizations. It provides features and tools for managing donations, volunteers, programs, and constituent relationships. NPSP helps nonprofits leverage Salesforce to drive their missions and achieve greater impact.</p>
+
+        <h3>Notes</h3>
+        <p>Notes in Salesforce are pieces of text that users can attach to records to capture additional information. They are a way to add context, comments, or reminders related to specific records. Notes are accessible from the Notes & Attachments related list and can be viewed by other users with appropriate permissions.</p>
+
+        <h2>O</h2>
+
+        <h3>Object</h3>
+        <p>An Object in Salesforce is a database table that stores data related to a specific entity, such as Accounts, Contacts, Leads, or Opportunities. Objects are the foundation of Salesforce’s data model, allowing you to organize and manage your information effectively. There are two main types of objects: Standard Objects and Custom Objects.</p>
+
+        <h3>Omni-Channel</h3>
+        <p>Omni-Channel in Salesforce is a customer service feature that intelligently routes work items, such as cases and leads, to the most appropriate support agents based on their skills, availability, and workload. Omni-Channel ensures that work is distributed efficiently, improving response times and customer satisfaction.</p>
+
+        <h3>Opportunity</h3>
+        <p>An Opportunity in Salesforce represents a potential sales deal that you are tracking through your sales process. Opportunities include information such as deal value, stage, close date, and products. Managing Opportunities helps sales teams forecast revenue, prioritize deals, and close sales more effectively.</p>
+
+        <h3>Organization-Wide Defaults (OWD)</h3>
+        <p>Organization-Wide Defaults (OWD) in Salesforce are the baseline security settings that define the default access level for records across the organization. OWD settings can be set to Public Read/Write, Public Read Only, or Private, determining how records are shared among users. OWD is the foundation of Salesforce’s data security model.</p>
+
+        <h2>P</h2>
+
+        <h3>Page Layout</h3>
+        <p>A Page Layout in Salesforce defines the arrangement and visibility of fields, related lists, and other components on a record’s detail page. Page Layouts are used to customize the user interface for different profiles, ensuring that users see only the relevant information for their roles. Customizing Page Layouts improves user experience and efficiency.</p>
+
+        <h3>Pardot</h3>
+        <p>Pardot is Salesforce’s B2B marketing automation solution that helps businesses generate and nurture leads, align marketing and sales, and measure marketing ROI. Pardot provides tools for email marketing, lead scoring, and campaign management. It integrates seamlessly with Salesforce, enabling a unified view of marketing and sales efforts.</p>
+
+        <h3>Partner Community</h3>
+        <p>A Partner Community in Salesforce is a portal designed for business partners to collaborate, access resources, and manage deals. It provides tools for lead registration, opportunity tracking, and partner enablement. Partner Communities strengthen relationships with partners and drive channel sales growth.</p>
+
+        <h3>Permission Set</h3>
+        <p>A Permission Set in Salesforce is a collection of settings and permissions that grant users access to additional features and functions without changing their profiles. Permission Sets allow for more granular control over user permissions, enabling you to extend capabilities to specific users as needed.</p>
+
+        <h3>Person Account</h3>
+        <p>A Person Account in Salesforce is a special type of account used to store information about an individual rather than a business entity. Person Accounts are useful for organizations that manage relationships with individuals, such as financial advisors or real estate agents. They combine the characteristics of both Accounts and Contacts.</p>
+
+        <h3>Picklist</h3>
+        <p>A Picklist in Salesforce is a field type that allows users to select a value from a predefined list of options. Picklists help standardize data entry and ensure consistency across records. There are two types of picklists: single-select, where users can choose only one option, and multi-select, where users can select multiple options.</p>
+
+        <h3>Process Builder</h3>
+        <p>Process Builder is a point-and-click automation tool in Salesforce that allows you to automate business processes. It enables you to create processes that automatically update records, send emails, create tasks, and more based on specific criteria. Process Builder is a powerful tool for streamlining workflows and increasing efficiency.</p>
+
+        <h3>Profile</h3>
+        <p>A Profile in Salesforce defines a user’s permissions and access settings within the organization. It determines what users can do, such as view, create, edit, or delete records. Profiles also control access to apps, tabs, and other Salesforce features. Assigning the right profiles ensures users have the appropriate level of access based on their roles.</p>
+
+        <h3>Public Group</h3>
+        <p>A Public Group in Salesforce is a collection of users, roles, and other groups that can be used to simplify sharing settings and collaboration. Public Groups can be used in sharing rules, queues, and approval processes. They help streamline the management of record access and communication within the organization.</p>
+
+        <h2>Q</h2>
+
+        <h3>Queue</h3>
+        <p>A Queue in Salesforce is a holding place for records that require action, such as leads, cases, or tasks. Queues allow teams to share the workload and ensure that items are addressed promptly. Users assigned to a queue can take ownership of the records, distributing work efficiently and ensuring timely follow-up.</p>
+
+        <h3>Quick Action</h3>
+        <p>Quick Actions in Salesforce are shortcuts that allow users to perform common tasks quickly, such as creating records, logging calls, or updating fields. Quick Actions can be added to record pages, global actions, and the Salesforce mobile app. They improve productivity by providing easy access to frequently used functions.</p>
+
+        <h2>R</h2>
+
+        <h3>Record</h3>
+        <p>A Record in Salesforce is a single instance of an object that contains specific data. For example, an individual contact or account is a record. Records are the fundamental units of data in Salesforce, and each record includes various fields that store information related to that object.</p>
+
+        <h3>Record Type</h3>
+        <p>Record Types in Salesforce allow you to offer different business processes, picklist values, and page layouts to different users based on their profiles. They are used to differentiate between various types of records within the same object, such as different types of opportunities or cases. Record Types help tailor Salesforce to meet specific business needs.</p>
+
+        <h3>Relationship</h3>
+        <p>A Relationship in Salesforce defines how objects are connected to each other. There are three main types of relationships:
+            <ol>
+                <li><strong>Lookup Relationship:</strong> A simple link between two objects.</li>
+                <li><strong>Master-Detail Relationship:</strong> A strong link where the child record depends on the parent.</li>
+                <li><strong>Hierarchical Relationship:</strong> A special type of lookup relationship available only for the user object.</li>
+            </ol>
+        </p>
+
+        <h3>Report</h3>
+        <p>A Report in Salesforce is a list of records that meet specific criteria, displayed in a tabular, summary, or matrix format. Reports are used to analyze data, track performance, and make informed decisions. Salesforce provides a powerful report builder that allows users to create custom reports and visualize data with charts and graphs.</p>
+
+        <h3>Role</h3>
+        <p>A Role in Salesforce defines the hierarchy and access levels for users within the organization. Roles determine data visibility and sharing settings based on the role hierarchy. Assigning roles helps ensure that users        <p>have the appropriate level of access to records and can collaborate effectively within their teams.</p>
+
+        <h3>Roll-Up Summary Field</h3>
+        <p>A Roll-Up Summary Field in Salesforce calculates values from related records, such as the sum, average, or count of child records. Roll-Up Summary Fields are available for objects in a Master-Detail Relationship and are used to aggregate data and provide insights at the parent level.</p>
+
+        <h2>S</h2>
+
+        <h3>Salesforce1 Mobile App</h3>
+        <p>The Salesforce1 Mobile App is a mobile application that allows users to access Salesforce from their smartphones and tablets. It provides a streamlined interface for managing records, tasks, and activities on the go. The Salesforce1 Mobile App enables users to stay productive and connected, even when away from their desks.</p>
+
+        <h3>Sandbox</h3>
+        <p>A Sandbox in Salesforce is a separate environment used for development, testing, and training without affecting the production environment. Sandboxes allow you to experiment with customizations, run tests, and train users safely. There are different types of sandboxes, including Developer, Developer Pro, Partial Copy, and Full.</p>
+
+        <h3>Schema Builder</h3>
+        <p>Schema Builder is a visual tool in Salesforce that allows users to view and modify the data model. It provides a drag-and-drop interface for creating and editing objects, fields, and relationships. Schema Builder helps administrators and developers visualize and manage the structure of their Salesforce environment.</p>
+
+        <h3>S-Control</h3>
+        <p>S-Controls were custom UI components used in Salesforce Classic to extend the platform's functionality. They have been deprecated in favor of Visualforce and Lightning components, which offer more robust and flexible customization options. S-Controls were an early method for embedding custom HTML and JavaScript in Salesforce pages.</p>
+
+        <h3>Service Cloud</h3>
+        <p>Service Cloud is Salesforce’s customer service and support platform. It provides tools for managing cases, tracking customer interactions, and delivering exceptional service. Service Cloud includes features like knowledge management, Omni-Channel routing, and service analytics, helping organizations improve customer satisfaction and retention.</p>
+
+        <h3>Sharing Rules</h3>
+        <p>Sharing Rules in Salesforce are used to extend access to records beyond the default Organization-Wide Defaults (OWD). They allow you to share records with users or groups based on criteria, such as role, ownership, or other field values. Sharing Rules help ensure the right people have access to the right data.</p>
+
+        <h3>Sites</h3>
+        <p>Salesforce Sites allow you to create public websites and web applications that are integrated with Salesforce data. Sites use Visualforce and Apex to build custom pages and functionality, providing a seamless connection between your external web presence and your Salesforce environment. Sites enable you to expose data to customers, partners, and the public.</p>
+
+        <h3>SOQL (Salesforce Object Query Language)</h3>
+        <p>SOQL is a query language used in Salesforce to retrieve data from the database. It is similar to SQL (Structured Query Language) and allows you to query objects and fields in Salesforce. SOQL is used in Apex code, Visualforce pages, and custom reports to fetch and manipulate data.</p>
+
+        <h3>SOSL (Salesforce Object Search Language)</h3>
+        <p>SOSL is a search language used in Salesforce to perform text-based searches across multiple objects. It allows you to search for records based on keywords and return relevant results from different objects. SOSL is useful for implementing global search functionality in Salesforce applications.</p>
+
+        <h3>Standard Object</h3>
+        <p>A Standard Object in Salesforce is a predefined object provided by Salesforce, such as Accounts, Contacts, Leads, and Opportunities. Standard Objects are the core building blocks of the Salesforce data model and are designed to meet common business needs. They come with predefined fields and relationships but can be customized to fit specific requirements.</p>
+
+        <h3>Static Resource</h3>
+        <p>A Static Resource in Salesforce is a file that is uploaded to the platform and can be referenced in Visualforce pages, Apex code, and Lightning components. Static Resources can include images, stylesheets, JavaScript files, and other assets. They provide a way to store and manage external files within Salesforce.</p>
+
+        <h3>System Administrator</h3>
+        <p>A System Administrator in Salesforce is a user with the highest level of access and permissions. System Administrators can configure settings, manage users, customize the platform, and perform all administrative tasks. They play a critical role in maintaining and optimizing the Salesforce environment.</p>
+
+        <h2>T</h2>
+
+        <h3>Tab</h3>
+        <p>A Tab in Salesforce is a user interface element that provides access to an object, application, or feature. Tabs are displayed in the navigation bar and allow users to quickly navigate to different parts of Salesforce. Custom Tabs can be created to provide access to custom objects, Visualforce pages, or web tabs.</p>
+
+        <h3>Task</h3>
+        <p>A Task in Salesforce is an activity that needs to be completed, such as a follow-up call, email, or meeting. Tasks can be assigned to users, associated with records, and tracked to ensure timely completion. Managing Tasks helps users stay organized and ensures important actions are not overlooked.</p>
+
+        <h3>Trailhead</h3>
+        <p>Trailhead is Salesforce’s free online learning platform that offers interactive modules and projects to help users learn Salesforce. Trailhead covers a wide range of topics, from basic CRM concepts to advanced development techniques. Users earn badges and points as they complete modules, making learning fun and engaging.</p>
+
+        <h3>Trigger</h3>
+        <p>A Trigger in Salesforce is a piece of Apex code that is executed before or after specific events on records, such as insertions, updates, or deletions. Triggers allow you to perform custom actions and automate processes based on changes to data. They are powerful tools for extending Salesforce’s functionality and enforcing business logic.</p>
+
+        <h3>Two-Factor Authentication (2FA)</h3>
+        <p>Two-Factor Authentication (2FA) in Salesforce is a security measure that requires users to verify their identity using multiple methods, such as a password and a one-time code sent to a mobile device. 2FA adds an extra layer of protection to ensure that only authorized users can access Salesforce.</p>
+
+        <h2>U</h2>
+
+        <h3>User</h3>
+        <p>A User in Salesforce is an individual who has access to the Salesforce platform with a unique username and password. Users can have different roles, profiles, and permissions based on their responsibilities and needs. Managing Users involves creating accounts, assigning profiles, and configuring security settings.</p>
+
+        <h3>User Interface (UI)</h3>
+        <p>The User Interface (UI) in Salesforce refers to the visual elements and layout that users interact with. This includes pages, forms, buttons, tabs, and other components. A well-designed UI improves usability and enhances the overall user experience.</p>
+
+        <h3>User License</h3>
+        <p>A User License in Salesforce defines the baseline permissions and access levels for users. It determines what features and functionalities users can access based on their roles. Different types of user licenses are available, such as Salesforce, Salesforce Platform, and Chatter Free, catering to various user needs and business models.</p>
+
+        <h2>V</h2>
+
+        <h3>Validation Rule</h3>
+        <p>A Validation Rule in Salesforce is a formula that evaluates data entered into fields and ensures it meets specific criteria before it can be saved. If the data does not meet the criteria, an error message is displayed, and the record cannot be saved. Validation Rules help maintain data integrity and enforce business rules.</p>
+
+        <h3>Visualforce</h3>
+        <p>Visualforce is a component-based framework in Salesforce that allows developers to build custom user interfaces. Visualforce uses a tag-based markup language similar to HTML and integrates with Apex to create dynamic, interactive pages. It is used to extend and customize the standard Salesforce UI.</p>
+
+        <h3>Visual Workflow</h3>
+        <p>Visual Workflow, also known as Flow, is a tool in Salesforce that allows you to create complex business processes using a visual interface. Flows can automate tasks, guide users through workflows, and integrate with external systems. Visual Workflow is a powerful tool for streamlining operations and improving efficiency.</p>
+
+        <h2>W</h2>
+
+        <h3>Web-to-Case</h3>
+        <p>Web-to-Case in Salesforce is a feature that automatically creates Cases from information submitted through a web form. This helps streamline the process of logging and managing customer support issues submitted via a website. Web-to-Case ensures that customer inquiries are captured and addressed promptly.</p>
+
+        <h3>Web-to-Lead</h3>
+        <p>Web-to-Lead in Salesforce is a feature that captures lead information submitted through a web form and creates a Lead record in Salesforce. This automates the process of collecting and managing leads from your website. Web-to-Lead helps ensure that potential customer inquiries are promptly followed up on by your sales team.</p>
+
+        <h3>Workflow Rule</h3>
+        <p>A Workflow Rule in Salesforce is an automation tool that triggers actions based on specific criteria. Workflow Rules can automate tasks such as updating fields, sending emails, creating tasks, or executing outbound messages. They help streamline business        <p>processes and reduce manual work.</p>
+
+        <h2>X</h2>
+
+        <h3>XML (Extensible Markup Language)</h3>
+        <p>XML is a markup language used to encode documents in a format that is both human-readable and machine-readable. In Salesforce, XML is often used in metadata files for deployments, integrations, and data exports. XML helps structure and transport data across different systems and platforms.</p>
+
+        <h2>Y</h2>
+
+        <h3>Year-End Processing</h3>
+        <p>Year-End Processing in Salesforce involves closing out the financial year, generating reports, and preparing for the new fiscal year. This includes tasks such as closing opportunities, updating forecasts, and performing data cleanup. Year-End Processing ensures that your Salesforce data is accurate and ready for the next fiscal period.</p>
+
+        <h2>Z</h2>
+
+        <h3>Zapier</h3>
+        <p>Zapier is a third-party integration platform that connects Salesforce with other apps and services to automate workflows. It uses "Zaps" to create automated actions between apps, such as adding new leads to a mailing list or creating tasks in a project management tool. Zapier helps streamline processes and improve productivity by integrating Salesforce with your broader tech stack.</p>
+
+        <h3>Zone</h3>
+        <p>A Zone in Salesforce refers to a logical partition within the platform used to isolate data, resources, or processes. Zones can be used for various purposes, such as creating secure environments for specific business units or managing multi-tenant applications. Zones help ensure that resources are allocated efficiently and securely.</p>
+
+    </div>
+    <div class="footer-image">
+        <img src="images/footnote.jpg" alt="Footer Image">
     </div>
 </body>
 </html>
