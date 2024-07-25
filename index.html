@@ -3,45 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Julia Kleszcz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Basic HTML Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/Julia-Kleszcz.webp" alt="Julia Kleszcz Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume and Credentials</a></li>
-                    <li><a href="getting-started.html">Getting Started with Salesforce</a></li>
-                    <li><a href="certification-study-guides.html">Certification Study Guides</a></li>
-                    <li><a href="step-by-step-tutorials.html">Step by Step Tutorials</a></li>
-                    <li><a href="video-tutorials.html">Video Tutorials</a></li>
-                    <li><a href="practice-exams.html">Salesforce Practice Exams</a></li>
-                    <li><a href="helpful-resources.html">Helpful Resources</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h1>Welcome to Julia Kleszcz's Professional Page</h1>
-            <p>Explore the various sections to learn more about my professional journey, skills, and contributions in the field of Salesforce. From my comprehensive resume to step-by-step tutorials and video guides, this site is designed to provide you with valuable insights and resources.</p>
-            <img src="images/File 00001.jpg" alt="Welcome Image">
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Julia Kleszcz. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#resume">Resume and Credentials</a>
+        <a href="#salesforce">Getting Started with Salesforce</a>
+        <a href="#tutorials">Step by Step Tutorials</a>
+        <a href="#videos">Video Tutorials</a>
+        <a href="#templates">Templates</a>
+        <a href="#glossary">Glossary</a>
+        <a href="#study-guides">Certification Study Guides</a>
+        <a href="#exams">Practice Exams</a>
+        <a href="#resources">Helpful Resources</a>
+        <a href
