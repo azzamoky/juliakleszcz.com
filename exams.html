@@ -3,28 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Exams</title>
+    <title>Salesforce Practice Exam</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function checkAnswers() {
+            const answers = [
+                "B", "D", "A", "A", "D", "C", "A", "B", "A", "B",
+                "B", "B", "A", "C", "C", "E", "B", "B", "B", "E",
+                "A", "C", "C", "C", "A", "E", "B", "C", "B", "B",
+                "C", "B", "B", "C", "C", "B", "B", "E", "C", "A",
+                "A", "B", "B", "A", "E", "B", "A", "B", "A", "B",
+                "C", "B", "B", "C", "B", "D", "B", "A", "B", "B"
+            ];
+
+            let score = 0;
+            for (let i = 1; i <= 60; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer && userAnswer.value === answers[i - 1]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('score').textContent = `Your score is ${score} out of 60.`;
+        }
+    </script>
 </head>
 <body>
+    <div class="header-image">
+        <img src="images/title.jpg" alt="Title Header Image">
+    </div>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume and Credentials</a>
-        <a href="salesforce.html">Getting Started with Salesforce</a>
-        <a href="tutorials.html">Step by Step Tutorials</a>
-        <a href="videos.html">Video Tutorials</a>
-        <a href="templates.html">Templates</a>
-        <a href="glossary.html">Glossary</a>
-        <a href="study-guides.html">Certification Study Guides</a>
-        <a href="exams.html">Practice Exams</a>
-        <a href="resources.html">Helpful Resources</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact Me</a>
+        <div class="navbar-row">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume and Credentials</a>
+            <a href="salesforce.html">Getting Started with Salesforce</a>
+            <a href="tutorials.html">Step by Step Tutorials</a>
+            <a href="videos.html">Video Tutorials</a>
+            <a href="templates.html">Templates</a>
+        </div>
+        <div class="navbar-row">
+            <a href="glossary.html">Glossary</a>
+            <a href="study-guides.html">Certification Study Guides</a>
+            <a href="exams.html">Practice Exams</a>
+            <a href="resources.html">Helpful Resources</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
     </div>
     <div class="content">
-        <h1>Practice Exams</h1>
-        <p>This is the practice exams page.</p>
+        <h1>Salesforce Practice Exam</h1>
+        <form id="examForm">
+            <div class="question">
+                <p>1. What is a junction object in Salesforce used for?</p>
+                <label><input type="radio" name="q1" value="A"> A) To create many-to-one relationships between objects.</label><br>
+                <label><input type="radio" name="q1" value="B"> B) To create many-to-many relationships between objects.</label><br>
+                <label><input type="radio" name="q1" value="C"> C) To create one-to-one relationships between objects.</label><br>
+                <label><input type="radio" name="q1" value="D"> D) To create lookup relationships between objects.</label><br>
+                <label><input type="radio" name="q1" value="E"> E) To create master-detail relationships between objects.</label>
+            </div>
+            <div class="question">
+                <p>2. Which of the following is not a type of Salesforce report format?</p>
+                <label><input type="radio" name="q2" value="A"> A) Tabular</label><br>
+                <label><input type="radio" name="q2" value="B"> B) Matrix</label><br>
+                <label><input type="radio" name="q2" value="C"> C) Summary</label><br>
+                <label><input type="radio" name="q2" value="D"> D) Dashboard</label><br>
+                <label><input type="radio" name="q2" value="E"> E) Joined</label>
+            </div>
+            <div class="question">
+                <p>3. What is the purpose of the Recycle Bin in Salesforce?</p>
+                <label><input type="radio" name="q3" value="A"> A) To store deleted records temporarily.</label><br>
+                <label><input type="radio" name="q3" value="B"> B) To permanently delete records.</label><br>
+                <label><input type="radio" name="q3" value="C"> C) To store archived records.</label><br>
+                <label><input type="radio" name="q3" value="D"> D) To backup records.</label><br>
+                <label><input type="radio" name="q3" value="E"> E) To restore records automatically.</label>
+            </div>
+            <div class="question">
+                <p>4. In Salesforce, what does CRUD stand for?</p>
+                <label><input type="radio" name="q4" value="A"> A) Create, Read, Update, Delete</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Create, Retrieve, Update, Delete</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Copy, Read, Update, Delete</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Copy, Retrieve, Update, Delete</label><br>
+                <label><input type="radio" name="q4" value="E"> E) Create, Remove, Update, Delete</label>
+            </div>
+            <div class="question">
+                <p>5. Which Salesforce feature allows users to manage records that are related to the same object?</p>
+                <label><input type="radio" name="q5" value="A"> A) Roll-Up Summary Fields</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Lookup Fields</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Master-Detail Relationships</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Self-Relationship</label><br>
+                <label><input type="radio" name="q5" value="E"> E) External Objects</label>
+            </div>
+            <div class="question">
+                <p>6. What is a key difference between a lookup relationship and a master-detail relationship?</p>
+                <label><input type="radio" name="q6" value="A"> A) Lookup relationship is a many-to-many relationship.</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Master-detail relationship does not support roll-up summary fields.</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Master-detail relationship has a tighter coupling between objects.</label><br>
+                <label><input type="radio" name="q6" value="D"> D) Lookup relationship automatically deletes child records when the parent record is deleted.</label><br>
+                <label><input type="radio" name="q6" value="E"> E) Lookup relationship enforces data integrity through cascading delete.</label>
+            </div>
+            <div class="question">
+                <p>7. Which of the following is a Salesforce data import tool?</p>
+                <label><input type="radio" name="q7" value="A"> A) Data Import Wizard</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Data Migration Tool</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Data Loader</label><br>
+                <label><input type="radio" name="q7" value="D"> D) Data Connector</label><br>
+                <label><input type="radio" name="q7" value="E"> E) Data Transformer</label>
+            </div>
+            <div class="question">
+                <p>8. What is the maximum number of master-detail relationships a custom object can have?</p>
+                <label><input type="radio" name="q8" value="A"> A) 1</label><br>
+                <label><input type="radio" name="q8" value="B"> B) 2</label><br>
+                <label><input type="radio" name="q8" value="C"> C) 3</label><br>
+                <label><input type="radio" name="q8" value="D"> D                <label><input type="radio" name="q8" value="D"> D) 4</label><br>
+                <label><input type="radio" name="q8" value="E"> E) 5</label>
+            </div>
+            <div class="question">
+                <p>9. What is an important characteristic of a record type in Salesforce?</p>
+                <label><input type="radio" name="q9" value="A"> A) It allows for different page layouts and business processes.</label><br>
+                <label><input type="radio" name="q9" value="B"> B) It limits the number of records in an object.</label><br>
+                <label><input type="radio" name="q9" value="C"> C) It controls field-level security.</label><br>
+                <label><input type="radio" name="q9" value="D"> D) It sets record-level security.</label><br>
+                <label><input type="radio" name="q9" value="E"> E) It determines user permissions.</label>
+            </div>
+            <div class="question">
+                <p>10. Which tool is used to build and customize Salesforce Lightning pages?</p>
+                <label><input type="radio" name="q10" value="A"> A) Visualforce</label><br>
+                <label><input type="radio" name="q10" value="B"> B) App Builder</label><br>
+                <label><input type="radio" name="q10" value="C"> C) Process Builder</label><br>
+                <label><input type="radio" name="q10" value="D"> D) Flow Builder</label><br>
+                <label><input type="radio" name="q10" value="E"> E) Schema Builder</label>
+            </div>
+            <div class="question">
+                <p>11. What is the purpose of a Salesforce sandbox?</p>
+                <label><input type="radio" name="q11" value="A"> A) To test code in a production environment.</label><br>
+                <label><input type="radio" name="q11" value="B"> B) To develop and test new customizations and configurations without affecting the production environment.</label><br>
+                <label><input type="radio" name="q11" value="C"> C) To store archived data.</label><br>
+                <label><input type="radio" name="q11" value="D"> D) To manage user permissions.</label><br>
+                <label><input type="radio" name="q11" value="E"> E) To perform data backups.</label>
+            </div>
+            <div class="question">
+                <p>12. Which Salesforce feature allows for the real-time routing of work to the most appropriate agents based on skill set and availability?</p>
+                <label><input type="radio" name="q12" value="A"> A) Case Assignment Rules</label><br>
+                <label><input type="radio" name="q12" value="B"> B) Omni-Channel</label><br>
+                <label><input type="radio" name="q12" value="C"> C) Escalation Rules</label><br>
+                <label><input type="radio" name="q12" value="D"> D) Workflow Rules</label><br>
+                <label><input type="radio" name="q12" value="E"> E) Auto-Response Rules</label>
+            </div>
+            <div class="question">
+                <p>13. What is the purpose of the Salesforce Shield platform?</p>
+                <label><input type="radio" name="q13" value="A"> A) To provide enhanced encryption, auditing, and monitoring for security and compliance.</label><br>
+                <label><input type="radio" name="q13" value="B"> B) To manage user licenses.</label><br>
+                <label><input type="radio" name="q13" value="C"> C) To automate business processes.</label><br>
+                <label><input type="radio" name="q13" value="D"> D) To integrate Salesforce with external systems.</label><br>
+                <label><input type="radio" name="q13" value="E"> E) To manage customer support cases.</label>
+            </div>
+            <div class="question">
+                <p>14. What is the role of an Apex trigger in Salesforce?</p>
+                <label><input type="radio" name="q14" value="A"> A) To create custom objects.</label><br>
+                <label><input type="radio" name="q14" value="B"> B) To automate tasks in Lightning Experience.</label><br>
+                <label><input type="radio" name="q14" value="C"> C) To execute custom actions before or after changes to Salesforce records.</label><br>
+                <label><input type="radio" name="q14" value="D"> D) To create custom user interfaces.</label><br>
+                <label><input type="radio" name="q14" value="E"> E) To integrate with external databases.</label>
+            </div>
+            <div class="question">
+                <p>15. Which Salesforce tool is used for data visualization and advanced analytics?</p>
+                <label><input type="radio" name="q15" value="A"> A) Reports</label><br>
+                <label><input type="radio" name="q15" value="B"> B) Dashboards</label><br>
+                <label><input type="radio" name="q15" value="C"> C) Tableau CRM (formerly Einstein Analytics)</label><br>
+                <label><input type="radio" name="q15" value="D"> D) Visualforce</label><br>
+                <label><input type="radio" name="q15" value="E"> E) Lightning App Builder</label>
+            </div>
+            <div class="question">
+                <p>16. Which type of field cannot be a controlling field in a field dependency?</p>
+                <label><input type="radio" name="q16" value="A"> A) Custom Checkbox</label><br>
+                <label><input type="radio" name="q16" value="B"> B) Custom Picklist</label><br>
+                <label><input type="radio" name="q16" value="C"> C) Standard Picklist</label><br>
+                <label><input type="radio" name="q16" value="D"> D) Custom Text</label><br>
+                <label><input type="radio" name="q16" value="E"> E) Custom Multi-Select Picklist</label>
+            </div>
+            <div class="question">
+                <p>17. What is a primary use case for Salesforce Flow?</p>
+                <label><input type="radio" name="q17" value="A"> A) Creating reports and dashboards</label><br>
+                <label><input type="radio" name="q17" value="B"> B) Automating complex business processes with visual workflows</label><br>
+                <label><input type="radio" name="q17" value="C"> C) Customizing page layouts</label><br>
+                <label><input type="radio" name="q17" value="D"> D) Managing user permissions</label><br>
+                <label><input type="radio" name="q17" value="E"> E) Importing and exporting data</label>
+            </div>
+            <div class="question">
+                <p>18. Which of the following is true about external objects in Salesforce?</p>
+                <label><input type="radio" name="q18" value="A"> A) They store data within Salesforce.</label><br>
+                <label><input type="radio" name="q18" value="B"> B) They are used for real-time data integration with external systems.</label><br>
+                <label><input type="radio" name="q18" value="C"> C) They can be used in master-detail relationships.</label><br>
+                <label><input type="radio" name="q18" value="D"> D) They support roll-up summary fields.</label><br>
+                <label><input type="radio" name="q18" value="E"> E) They are limited to 1 million records.</label>
+            </div>
+            <div class="question">
+                <p>19. What is the purpose of the Schema Builder in Salesforce?</p>
+                <label><input type="radio" name="q19" value="A"> A) To create reports and dashboards</label><br>
+                <label><input type="radio" name="q19" value="B"> B) To visually manage objects, fields, and relationships</label><br>
+                <label><input type="radio" name="q19" value="C"> C) To configure user permissions</label><br>
+                <label><input type="radio" name="q19" value="D"> D) To build custom user interfaces</label><br>
+                <label><input type="radio" name="q19" value="E"> E) To automate business processes</label>
+            </div>
+            <div class="question">
+                <p>                <p>20. Which Salesforce feature allows users to define and automate actions and notifications based on specific criteria?</p>
+                <label><input type="radio" name="q20" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q20" value="B"> B) Process Builder</label><br>
+                <label><input type="radio" name="q20" value="C"> C) Flow Builder</label><br>
+                <label><input type="radio" name="q20" value="D"> D) Approval Processes</label><br>
+                <label><input type="radio" name="q20" value="E"> E) All of the above</label>
+            </div>
+            <div class="question">
+                <p>21. Which Salesforce functionality is used to track changes to records over time?</p>
+                <label><input type="radio" name="q21" value="A"> A) Field History Tracking</label><br>
+                <label><input type="radio" name="q21" value="B"> B) Audit Trail</label><br>
+                <label><input type="radio" name="q21" value="C"> C) Debug Logs</label><br>
+                <label><input type="radio" name="q21" value="D"> D) Sharing Rules</label><br>
+                <label><input type="radio" name="q21" value="E"> E) Role Hierarchy</label>
+            </div>
+            <div class="question">
+                <p>22. What is the maximum number of roll-up summary fields you can have per object?</p>
+                <label><input type="radio" name="q22" value="A"> A) 5</label><br>
+                <label><input type="radio" name="q22" value="B"> B) 10</label><br>
+                <label><input type="radio" name="q22" value="C"> C) 15</label><br>
+                <label><input type="radio" name="q22" value="D"> D) 20</label><br>
+                <label><input type="radio" name="q22" value="E"> E) 25</label>
+            </div>
+            <div class="question">
+                <p>23. Which type of dashboard component displays data as a percentage of a whole?</p>
+                <label><input type="radio" name="q23" value="A"> A) Bar Chart</label><br>
+                <label><input type="radio" name="q23" value="B"> B) Line Chart</label><br>
+                <label><input type="radio" name="q23" value="C"> C) Pie Chart</label><br>
+                <label><input type="radio" name="q23" value="D"> D) Funnel Chart</label><br>
+                <label><input type="radio" name="q23" value="E"> E) Donut Chart</label>
+            </div>
+            <div class="question">
+                <p>24. What is the purpose of the AppExchange in Salesforce?</p>
+                <label><input type="radio" name="q24" value="A"> A) To integrate Salesforce with external systems</label><br>
+                <label><input type="radio" name="q24" value="B"> B) To create and manage custom objects</label><br>
+                <label><input type="radio" name="q24" value="C"> C) To find and install third-party applications and integrations</label><br>
+                <label><input type="radio" name="q24" value="D"> D) To automate business processes</label><br>
+                <label><input type="radio" name="q24" value="E"> E) To configure user permissions</label>
+            </div>
+            <div class="question">
+                <p>25. What does the “View All” permission allow a user to do?</p>
+                <label><input type="radio" name="q25" value="A"> A) View all data in the organization, regardless of sharing rules and settings.</label><br>
+                <label><input type="radio" name="q25" value="B"> B) Edit all data in the organization.</label><br>
+                <label><input type="radio" name="q25" value="C"> C) Delete all data in the organization.</label><br>
+                <label><input type="radio" name="q25" value="D"> D) View all records in a specific object.</label><br>
+                <label><input type="radio" name="q25" value="E"> E) View all records they own.</label>
+            </div>
+            <div class="question">
+                <p>26. Which of the following is not a valid data type for a custom field in Salesforce?</p>
+                <label><input type="radio" name="q26" value="A"> A) Checkbox</label><br>
+                <label><input type="radio" name="q26" value="B"> B) Formula</label><br>
+                <label><input type="radio" name="q26" value="C"> C) Email</label><br>
+                <label><input type="radio" name="q26" value="D"> D) Auto Number</label><br>
+                <label><input type="radio" name="q26" value="E"> E) File</label>
+            </div>
+            <div class="question">
+                <p>27. What is the purpose of the Global Actions menu in Salesforce?</p>
+                <label><input type="radio" name="q27" value="A"> A) To create custom objects</label><br>
+                <label><input type="radio" name="q27" value="B"> B) To perform quick actions from anywhere in the Salesforce app</label><br>
+                <label><input type="radio" name="q27" value="C"> C) To customize page layouts</label><br>
+                <label><input type="radio" name="q27" value="D"> D) To manage user permissions</label><br>
+                <label><input type="radio" name="q27" value="E"> E) To import and export data</label>
+            </div>
+            <div class="question">
+                <p>28. Which Salesforce feature helps in managing data quality by identifying and merging duplicate records?</p>
+                <label><input type="radio" name="q28" value="A"> A) Data Import Wizard</label><br>
+                <label><input type="radio" name="q28" value="B"> B) Data Loader</label><br>
+                <label><input type="radio" name="q28" value="C"> C) Duplicate Management</label><br>
+                <label><input type="radio" name="q28" value="D"> D) Schema Builder</label><br>
+                <label><input type="radio" name="q28" value="E"> E) Validation Rules</label>
+            </div>
+            <div class="question">
+                <p>29. What is a Lightning App Builder used for?</p>
+                <label><input type="radio" name="q29" value="A"> A) To create custom objects</label><br>
+                <label><input type="radio" name="q29" value="B"> B) To design and build custom pages for Lightning Experience and Salesforce mobile app</label><br>
+                <label><input type="radio" name="q29" value="C"> C) To automate business processes</label><br>
+                <label><input type="radio" name="q29" value="D"> D) To manage data import and export</label><br>
+                <label><input type="radio" name="q29" value="E"> E) To configure user permissions</label>
+            </div>
+            <div class="question">
+                <p>30. Which of the following statements is true about Salesforce Chatter?</p>
+                <label><input type="radio" name="q30" value="A"> A) It is used for managing customer support cases.</label><br>
+                <label><input type="radio" name="q30" value="B"> B) It is an enterprise social network for collaboration.</label><br>
+                <label><input type="radio" name="q30" value="C"> C) It is used for creating custom objects.</label><br>
+                <label><input type="radio" name="q30" value="D"> D) It is a tool for importing and exporting data.</label><br>
+                <label><input type="radio" name="q30" value="E"> E) It is used for building reports and dashboards.</label>
+            </div>
+            <div class="question">
+                <p>31. What is a key benefit of using Salesforce’s multi-tenant architecture?</p>
+                <label><input type="radio" name="q31" value="A"> A) Each customer has their own dedicated hardware.</label><br>
+                <label><input type="radio" name="q31" value="B"> B) Data is stored on-premises.</label><br>
+                <label><input type="radio" name="q31" value                "C"> C) Efficient resource utilization and scalability.</label><br>
+                <label><input type="radio" name="q31" value="D"> D) Custom code is not allowed.</label><br>
+                <label><input type="radio" name="q31" value="E"> E) Integration with external systems is not supported.</label>
+            </div>
+            <div class="question">
+                <p>32. Which of the following is true about Salesforce Communities?</p>
+                <label><input type="radio" name="q32" value="A"> A) They are used to store large data volumes.</label><br>
+                <label><input type="radio" name="q32" value="B"> B) They enable external users to access Salesforce data and collaborate.</label><br>
+                <label><input type="radio" name="q32" value="C"> C) They are only available to Salesforce admins.</label><br>
+                <label><input type="radio" name="q32" value="D"> D) They cannot be customized.</label><br>
+                <label><input type="radio" name="q32" value="E"> E) They do not support custom branding.</label>
+            </div>
+            <div class="question">
+                <p>33. Which feature in Salesforce allows you to create custom, reusable components for pages?</p>
+                <label><input type="radio" name="q33" value="A"> A) Visualforce</label><br>
+                <label><input type="radio" name="q33" value="B"> B) Lightning Components</label><br>
+                <label><input type="radio" name="q33" value="C"> C) Apex Classes</label><br>
+                <label><input type="radio" name="q33" value="D"> D) Process Builder</label><br>
+                <label><input type="radio" name="q33" value="E"> E) Schema Builder</label>
+            </div>
+            <div class="question">
+                <p>34. What is the purpose of the Salesforce AppExchange Security Review?</p>
+                <label><input type="radio" name="q34" value="A"> A) To evaluate the performance of applications.</label><br>
+                <label><input type="radio" name="q34" value="B"> B) To ensure applications meet Salesforce’s security standards.</label><br>
+                <label><input type="radio" name="q34" value="C"> C) To provide user training for new applications.</label><br>
+                <label><input type="radio" name="q34" value="D"> D) To manage application updates.</label><br>
+                <label><input type="radio" name="q34" value="E"> E) To integrate applications with external systems.</label>
+            </div>
+            <div class="question">
+                <p>35. Which report format allows you to group and summarize data by rows and columns?</p>
+                <label><input type="radio" name="q35" value="A"> A) Tabular Report</label><br>
+                <label><input type="radio" name="q35" value="B"> B) Summary Report</label><br>
+                <label><input type="radio" name="q35" value="C"> C) Matrix Report</label><br>
+                <label><input type="radio" name="q35" value="D"> D) Joined Report</label><br>
+                <label><input type="radio" name="q35" value="E"> E) Dashboard</label>
+            </div>
+            <div class="question">
+                <p>36. What is the function of the Salesforce Mobile App?</p>
+                <label><input type="radio" name="q36" value="A"> A) To manage data backups.</label><br>
+                <label><input type="radio" name="q36" value="B"> B) To provide access to Salesforce data and functionality on mobile devices.</label><br>
+                <label><input type="radio" name="q36" value="C"> C) To create custom objects.</label><br>
+                <label><input type="radio" name="q36" value="D"> D) To integrate with third-party applications.</label><br>
+                <label><input type="radio" name="q36" value="E"> E) To design and build custom pages.</label>
+            </div>
+            <div class="question">
+                <p>37. Which Salesforce feature is used to automate complex business processes visually?</p>
+                <label><input type="radio" name="q37" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q37" value="B"> B) Process Builder</label><br>
+                <label><input type="radio" name="q37" value="C"> C) Visualforce</label><br>
+                <label><input type="radio" name="q37" value="D"> D) Lightning Components</label><br>
+                <label><input type="radio" name="q37" value="E"> E) Schema Builder</label>
+            </div>
+            <div class="question">
+                <p>38. What does a “sandbox” environment in Salesforce allow you to do?</p>
+                <label><input type="radio" name="q38" value="A"> A) Run production-level operations.</label><br>
+                <label><input type="radio" name="q38" value="B"> B) Test new configurations and code changes without affecting the production environment.</label><br>
+                <label><input type="radio" name="q38" value="C"> C) Store backup data.</label><br>
+                <label><input type="radio" name="q38" value="D"> D) Monitor user activities.</label><br>
+                <label><input type="radio" name="q38" value="E"> E) Automate business processes.</label>
+            </div>
+            <div class="question">
+                <p>39. Which field type can be used as an external ID in Salesforce?</p>
+                <label><input type="radio" name="q39" value="A"> A) Text</label><br>
+                <label><input type="radio" name="q39" value="B"> B) Email</label><br>
+                <label><input type="radio" name="q39" value="C"> C) Number</label><br>
+                <label><input type="radio" name="q39" value="D"> D) Phone</label><br>
+                <label><input type="radio" name="q39" value="E"> E) All of the above</label>
+            </div>
+            <div class="question">
+                <p>40. Which of the following is not a Salesforce Standard Object?</p>
+                <label><input type="radio" name="q40" value="A"> A) Account</label><br>
+                <label><input type="radio" name="q40" value="B"> B) Contact</label><br>
+                <label><input type="radio" name="q40" value="C"> C) Invoice</label><br>
+                <label><input type="radio" name="q40" value="D"> D) Opportunity</label><br>
+                <label><input type="radio" name="q40" value="E"> E) Lead</label>
+            </div>
+            <div class="question">
+                <p>41. Which feature in Salesforce is used to track changes to field values over time?</p>
+                <label><input type="radio" name="q41" value="A"> A) Field History Tracking</label><br>
+                <label><input type="radio" name="q41" value="B"> B) Audit Trail</label><br>
+                <label><input type="radio" name="q41" value="C"> C) Debug Logs</label><br>
+                <label><input type="radio" name="q41" value="D"> D) Sharing Rules</label><br>
+                <label><input type="radio" name="q41" value="E"> E) Role Hierarchy</label>
+            </div>
+            <div class="question">
+                <p>42. What is the purpose of the Salesforce Lightning Experience?</p>
+                <label><input type="radio" name="q42" value="A"> A) To provide a classic user interface.</label><br>
+                <label><input type="radio" name="q42" value="B"> B) To offer a modern, responsive user interface with enhanced features.</label><br>
+                <label><input type="radio" name="q42" value="C"> C) To manage data backups.</label><br>
+                <label><input type="radio" name="q42" value="D"> D) To create custom objects.</label><br>
+                <label><input type="radio" name="q42" value="E"> E) To integrate with third-party applications.</label>
+            </div>
+            <div class="question">
+                <p>43. Which Salesforce tool allows for the creation of automated business processes using a visual interface?</p>
+                <label><input type="radio" name="q43" value="A"> A)                <p>43. Which Salesforce tool allows for the creation of automated business processes using a visual interface?</p>
+                <label><input type="radio" name="q43" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q43" value="B"> B) Process Builder</label><br>
+                <label><input type="radio" name="q43" value="C"> C) Visualforce</label><br>
+                <label><input type="radio" name="q43" value="D"> D) Schema Builder</label><br>
+                <label><input type="radio" name="q43" value="E"> E) Apex Classes</label>
+            </div>
+            <div class="question">
+                <p>44. What is a key benefit of using Salesforce Shield?</p>
+                <label><input type="radio" name="q44" value="A"> A) Enhanced data encryption, auditing, and monitoring for security and compliance.</label><br>
+                <label><input type="radio" name="q44" value="B"> B) Simplified user interface.</label><br>
+                <label><input type="radio" name="q44" value="C"> C) Faster data processing.</label><br>
+                <label><input type="radio" name="q44" value="D"> D) Integrated social media tools.</label><br>
+                <label><input type="radio" name="q44" value="E"> E) Improved data import capabilities.</label>
+            </div>
+            <div class="question">
+                <p>45. Which type of report cannot be used in a dashboard component?</p>
+                <label><input type="radio" name="q45" value="A"> A) Tabular Report without a row limit</label><br>
+                <label><input type="radio" name="q45" value="B"> B) Summary Report</label><br>
+                <label><input type="radio" name="q45" value="C"> C) Matrix Report</label><br>
+                <label><input type="radio" name="q45" value="D"> D) Joined Report</label><br>
+                <label><input type="radio" name="q45" value="E"> E) Tabular Report with a row limit</label>
+            </div>
+            <div class="question">
+                <p>46. Which Salesforce feature allows users to connect to external databases without storing data within Salesforce?</p>
+                <label><input type="radio" name="q46" value="A"> A) Custom Objects</label><br>
+                <label><input type="radio" name="q46" value="B"> B) External Objects</label><br>
+                <label><input type="radio" name="q46" value="C"> C) Standard Objects</label><br>
+                <label><input type="radio" name="q46" value="D"> D) Junction Objects</label><br>
+                <label><input type="radio" name="q46" value="E"> E) Visualforce</label>
+            </div>
+            <div class="question">
+                <p>47. What is the purpose of Salesforce Einstein Analytics?</p>
+                <label><input type="radio" name="q47" value="A"> A) To create custom objects.</label><br>
+                <label><input type="radio" name="q47" value="B"> B) To provide advanced data visualization and predictive analytics.</label><br>
+                <label><input type="radio" name="q47" value="C"> C) To automate business processes.</label><br>
+                <label><input type="radio" name="q47" value="D"> D) To manage user permissions.</label><br>
+                <label><input type="radio" name="q47" value="E"> E) To integrate with third-party applications.</label>
+            </div>
+            <div class="question">
+                <p>48. Which of the following is a true statement about custom settings in Salesforce?</p>
+                <label><input type="radio" name="q48" value="A"> A) They cannot be used in formulas.</label><br>
+                <label><input type="radio" name="q48" value="B"> B) They are used to store static data that can be accessed across the organization.</label><br>
+                <label><input type="radio" name="q48" value="C"> C) They are only available in the Lightning Experience.</label><br>
+                <label><input type="radio" name="q48" value="D"> D) They cannot be used in Apex code.</label><br>
+                <label><input type="radio" name="q48" value="E"> E) They do not support hierarchy types.</label>
+            </div>
+            <div class="question">
+                <p>49. Which feature in Salesforce allows users to manage workflows and approval processes in a graphical interface?</p>
+                <label><input type="radio" name="q49" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q49" value="B"> B) Process Builder</label><br>
+                <label><input type="radio" name="q49" value="C"> C) Approval Processes</label><br>
+                <label><input type="radio" name="q49" value="D"> D) Flow Builder</label><br>
+                <label><input type="radio" name="q49" value="E"> E) Visualforce</label>
+            </div>
+            <div class="question">
+                <p>50. What is the purpose of Salesforce Governor Limits?</p>
+                <label><input type="radio" name="q50" value="A"> A) To restrict user permissions.</label><br>
+                <label><input type="radio" name="q50" value="B"> B) To ensure efficient resource usage and prevent monopolization of resources by any single organization.</label><br>
+                <label><input type="radio" name="q50" value="C"> C) To limit data storage.</label><br>
+                <label><input type="radio" name="q50" value="D"> D) To manage user licenses.</label><br>
+                <label><input type="radio" name="q50" value="E"> E) To control API access.</label>
+            </div>
+            <div class="question">
+                <p>51. What is a key feature of Salesforce Lightning Web Components (LWC)?</p>
+                <label><input type="radio" name="q51" value="A"> A) They are based on the Aura framework.</label><br>
+                <label><input type="radio" name="q51" value="B"> B) They use standard web technologies like HTML and JavaScript.</label><br>
+                <label><input type="radio" name="q51" value="C"> C) They do not support custom events.</label><br>
+                <label><input type="radio" name="q51" value="D"> D) They are only available in Classic Experience.</label><br>
+                <label><input type="radio" name="q51" value="E"> E) They require Visualforce for implementation.</label>
+            </div>
+            <div class="question">
+                <p>52. Which Salesforce feature helps ensure data consistency by preventing duplicate records?</p>
+                <label><input type="radio" name="q52" value="A"> A) Data Loader</label><br>
+                <label><input type="radio" name="q52" value="B"> B) Duplicate Management</label><br>
+                <label><input type="radio" name="q52" value="C"> C) Data Import Wizard</label><br>
+                <label><input type="radio" name="q52" value="D"> D) Schema Builder</label><br>
+                <label><input type="radio" name="q52" value="E"> E) Validation Rules</label>
+            </div>
+            <div class="question">
+                <p>53. What is the maximum number of master-detail relationships a custom object can have in Salesforce?</p>
+                <label><input type="radio" name="q53" value="A"> A) 1</label><br>
+                <label><input type="radio" name="q53" value="B"> B) 2</label><br>
+                <label><input type="radio" name="q53" value="C"> C) 3</label><br>
+                <label><input type="radio" name="q53" value="D"> D) 4</label><br>
+                <label><input type="radio" name="q53" value="E"> E) 5</label>
+            </div>
+            <div class="question">
+                <p>54. Which feature allows you to define custom logic and processes for Salesforce objects using point-and-click tools?</p>
+                <label><input type="radio" name="q54" value="A"> A) Apex Classes</label><br>
+                <label><input type="radio" name="q54" value="B"> B) Visualforce</label><br>
+                <label><input type="radio" name="q54" value="                <label><input type="radio" name="q54" value="C"> C) Process Builder</label><br>
+                <label><input type="radio" name="q54" value="D"> D) Schema Builder</label><br>
+                <label><input type="radio" name="q54" value="E"> E) Data Loader</label>
+            </div>
+            <div class="question">
+                <p>55. What is the primary purpose of Salesforce Service Cloud?</p>
+                <label><input type="radio" name="q55" value="A"> A) To manage sales processes.</label><br>
+                <label><input type="radio" name="q55" value="B"> B) To provide tools for customer service and support.</label><br>
+                <label><input type="radio" name="q55" value="C"> C) To automate marketing campaigns.</label><br>
+                <label><input type="radio" name="q55" value="D"> D) To integrate with external systems.</label><br>
+                <label><input type="radio" name="q55" value="E"> E) To create custom objects.</label>
+            </div>
+            <div class="question">
+                <p>56. Which of the following is not a valid Salesforce user license type?</p>
+                <label><input type="radio" name="q56" value="A"> A) Salesforce Platform</label><br>
+                <label><input type="radio" name="q56" value="B"> B) Lightning Platform</label><br>
+                <label><input type="radio" name="q56" value="C"> C) Chatter Free</label><br>
+                <label><input type="radio" name="q56" value="D"> D) Salesforce Shield</label><br>
+                <label><input type="radio" name="q56" value="E"> E) Customer Community</label>
+            </div>
+            <div class="question">
+                <p>57. What does the "Manage Public Reports" permission allow a user to do?</p>
+                <label><input type="radio" name="q57" value="A"> A) Create and edit reports in the "My Personal Custom Reports" folder.</label><br>
+                <label><input type="radio" name="q57" value="B"> B) Create, edit, and delete reports in public folders.</label><br>
+                <label><input type="radio" name="q57" value="C"> C) Manage user access to reports.</label><br>
+                <label><input type="radio" name="q57" value="D"> D) Share reports with external users.</label><br>
+                <label><input type="radio" name="q57" value="E"> E) Export reports to Excel.</label>
+            </div>
+            <div class="question">
+                <p>58. Which Salesforce feature allows for the automatic creation of records based on specific criteria?</p>
+                <label><input type="radio" name="q58" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q58" value="B"> B) Auto-Response Rules</label><br>
+                <label><input type="radio" name="q58" value="C"> C) Assignment Rules</label><br>
+                <label><input type="radio" name="q58" value="D"> D) Escalation Rules</label><br>
+                <label><input type="radio" name="q58" value="E"> E) Approval Processes</label>
+            </div>
+            <div class="question">
+                <p>59. What is the purpose of the Salesforce "App Launcher"?</p>
+                <label><input type="radio" name="q59" value="A"> A) To create custom objects.</label><br>
+                <label><input type="radio" name="q59" value="B"> B) To provide a central place to access all apps and objects in Salesforce.</label><br>
+                <label><input type="radio" name="q59" value="C"> C) To manage user permissions.</label><br>
+                <label><input type="radio" name="q59" value="D"> D) To automate business processes.</label><br>
+                <label><input type="radio" name="q59" value="E"> E) To integrate with third-party applications.</label>
+            </div>
+            <div class="question">
+                <p>60. Which Salesforce feature is used to define and enforce business rules across the organization?</p>
+                <label><input type="radio" name="q60" value="A"> A) Workflow Rules</label><br>
+                <label><input type="radio" name="q60" value="B"> B) Validation Rules</label><br>
+                <label><input type="radio" name="q60" value="C"> C) Process Builder</label><br>
+                <label><input type="radio" name="q60" value="D"> D) Approval Processes</label><br>
+                <label><input type="radio" name="q60" value="E"> E) Flow Builder</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="score"></div>
+    </div>
+    <div class="footer-image">
+        <img src="images/footnote.jpg" alt="Footer Image">
     </div>
 </body>
 </html>
