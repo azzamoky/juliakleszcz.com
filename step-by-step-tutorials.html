@@ -3,201 +3,934 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step by Step Tutorials - Julia Kleszcz</title>
+    <title>Step by Step Tutorials</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/Julia-Kleszcz.webp" alt="Julia Kleszcz Logo">
-            </div>
-            <nav>
+    <div class="header-image">
+        <img src="images/title.jpg" alt="Header Image">
+    </div>
+    <div class="navbar">
+        <div class="navbar-row">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume and Credentials</a>
+            <a href="getting_started.html">Getting Started with Salesforce</a>
+            <a href="tutorials.html">Step by Step Tutorials</a>
+            <a href="video_tutorials.html">Video Tutorials</a>
+            <a href="templates.html">Templates</a>
+        </div>
+        <div class="navbar-row">
+            <a href="glossary.html">Glossary</a>
+            <a href="certification_guides.html">Certification Study Guides</a>
+            <a href="practice_exams.html">Practice Exams</a>
+            <a href="resources.html">Helpful Resources</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Step by Step Tutorials</h1>
+        <p>Welcome to the comprehensive guide to performing the 20 most frequently used tasks in Salesforce. This detailed tutorial is designed to help new users become proficient in using Salesforce while also serving as a valuable reference for seasoned users looking to refresh their skills. Each task is broken down into precise steps, ensuring you can follow along easily and understand every aspect of the process. From logging in to Salesforce to creating complex custom report types, this guide covers it all. Let's dive in and explore these essential Salesforce tasks!</p>
+
+        <h2>1. Logging in to Salesforce</h2>
+        <p><strong>Logging in to Salesforce is the first step to accessing your CRM platform and its powerful features. Follow these steps to log in securely:</strong></p>
+        <ol>
+            <li><strong>Open Your Browser:</strong>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume and Credentials</a></li>
-                    <li><a href="getting-started.html">Getting Started with Salesforce</a></li>
-                    <li><a href="certification-study-guides.html">Certification Study Guides</a></li>
-                    <li><a href="step-by-step-tutorials.html">Step by Step Tutorials</a></li>
-                    <li><a href="video-tutorials.html">Video Tutorials</a></li>
-                    <li><a href="practice-exams.html">Salesforce Practice Exams</a></li>
-                    <li><a href="helpful-resources.html">Helpful Resources</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>Launch your preferred web browser (e.g., Chrome, Firefox, Safari, Edge).</li>
                 </ul>
-            </nav>
+            </li>
+            <li><strong>Navigate to the Login Page:</strong>
+                <ul>
+                    <li>In the address bar, type <a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com</a> and press Enter.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Username:</strong>
+                <ul>
+                    <li>In the "Username" field, enter your Salesforce username.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Password:</strong>
+                <ul>
+                    <li>In the "Password" field, enter your Salesforce password.</li>
+                </ul>
+            </li>
+            <li><strong>Click Log In:</strong>
+                <ul>
+                    <li>Click the "Log In" button to access your Salesforce account.</li>
+                </ul>
+            </li>
+            <li><strong>Two-Factor Authentication:</strong>
+                <ul>
+                    <li>If prompted, complete the two-factor authentication (2FA) process by entering the code sent to your mobile device or email.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>2. Creating a New Account</h2>
+        <p><strong>An Account in Salesforce represents a business entity or organization that you have a relationship with. Follow these steps to create a new account:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Accounts Tab:</strong>
+                <ul>
+                    <li>Click on the "Accounts" tab in the navigation bar. If it's not visible, click on the App Launcher (grid icon) and search for "Accounts."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new account.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Account Information:</strong>
+                <ul>
+                    <li><strong>Account Name:</strong> Enter the name of the business.</li>
+                    <li><strong>Account Site:</strong> (Optional) Enter a description of the account site.</li>
+                    <li><strong>Type:</strong> Select the type of account (e.g., Customer, Partner).</li>
+                    <li><strong>Industry:</strong> Select the industry of the business.</li>
+                    <li><strong>Annual Revenue:</strong> Enter the annual revenue of the business.</li>
+                    <li><strong>Phone:</strong> Enter the business phone number.</li>
+                    <li><strong>Website:</strong> Enter the business website URL.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Account:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new account.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>3. Creating a New Contact</h2>
+        <p><strong>A Contact in Salesforce represents an individual associated with an Account. Follow these steps to create a new contact:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Contacts Tab:</strong>
+                <ul>
+                    <li>Click on the "Contacts" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Contacts."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new contact.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Contact Information:</strong>
+                <ul>
+                    <li><strong>First Name:</strong> Enter the contact’s first name.</li>
+                    <li><strong>Last Name:</strong> Enter the contact’s last name.</li>
+                    <li><strong>Account Name:</strong> Search and select the associated account.</li>
+                    <li><strong>Title:</strong> Enter the contact’s job title.</li>
+                    <li><strong>Email:</strong> Enter the contact’s email address.</li>
+                    <li><strong>Phone:</strong> Enter the contact’s phone number.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Contact:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new contact.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>4. Creating a New Opportunity</h2>
+        <p><strong>An Opportunity in Salesforce represents a potential sales deal. Follow these steps to create a new opportunity:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Opportunities Tab:</strong>
+                <ul>
+                    <li>Click on the "Opportunities" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Opportunities."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new opportunity.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Opportunity Information:</strong>
+                <ul>
+                    <li><strong>Opportunity Name:</strong> Enter a name for the opportunity.</li>
+                    <li><strong>Account Name:</strong> Search and select the associated account.</li>
+                    <li><strong>Close Date:</strong> Select the expected close date.</li>
+                    <li><strong>Stage:</strong> Select the stage of the opportunity (e.g., Prospecting, Negotiation).</li>
+                    <li><strong>Amount:</strong> Enter the potential deal amount.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Opportunity:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new opportunity.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>5. Creating a New Lead</h2>
+        <p><strong>A Lead in Salesforce represents a potential customer who has shown interest in your products or services. Follow these steps to create a new lead:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Leads Tab:</strong>
+                <ul>
+                    <li>Click on the "Leads" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Leads."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new lead.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Lead Information:</strong>
+                <ul>
+                    <li><strong>First Name:</strong> Enter the<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step by Step Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-image">
+        <img src="images/title.jpg" alt="Header Image">
+    </div>
+    <div class="navbar">
+        <div class="navbar-row">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume and Credentials</a>
+            <a href="getting_started.html">Getting Started with Salesforce</a>
+            <a href="tutorials.html">Step by Step Tutorials</a>
+            <a href="video_tutorials.html">Video Tutorials</a>
+            <a href="templates.html">Templates</a>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h1>Step by Step Tutorials</h1>
-            <p>These step-by-step tutorials are designed to help both beginners and advanced users enhance their Salesforce skills. Each tutorial is structured to guide you through specific functionalities and features of the Salesforce platform, ensuring you can apply your knowledge effectively in real-world scenarios.</p>
-            <img src="images/File 00018.jpg" alt="Step by Step Tutorials">
-
-            <h2>Getting Started with Salesforce</h2>
-            <p>This tutorial covers the basics of Salesforce, including how to navigate the interface, customize your dashboard, and manage your user profile. It's perfect for new users looking to get up to speed quickly.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/starting-with-salesforce">Starting with Salesforce</a></li>
-            </ul>
-
-            <h2>Managing Accounts and Contacts</h2>
-            <p>Learn how to effectively manage your customer information by creating and maintaining accounts and contacts. This tutorial will walk you through the process of importing data, linking records, and utilizing account hierarchies.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/accounts_contacts_leads">Accounts, Contacts, and Leads</a></li>
-            </ul>
-
-            <h2>Sales Process Automation</h2>
-            <p>Automating your sales process can significantly increase efficiency. This tutorial covers how to set up and customize Sales Cloud to automate lead generation, opportunity tracking, and sales forecasting.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/sales_cloud_basics">Sales Cloud Basics</a></li>
-            </ul>
-
-            <h2>Enhancing Customer Support with Service Cloud</h2>
-            <p>Discover how to use Service Cloud to provide exceptional customer support. This tutorial includes setting up case management, creating a knowledge base, and using omni-channel routing to ensure customer inquiries are handled promptly.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/service_basics">Service Cloud Basics</a></li>
-            </ul>
-
-            <h2>Marketing Automation with Marketing Cloud</h2>
-            <p>Marketing Cloud offers powerful tools for creating personalized customer journeys. This tutorial will guide you through the basics of email marketing, social media management, and customer journey automation.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/marketing_cloud_journey_builder_basics">Marketing Cloud Journey Builder Basics</a></li>
-            </ul>
-
-            <h2>Customizing Salesforce with Lightning App Builder</h2>
-            <p>Learn how to create custom apps and modify existing ones using the Lightning App Builder. This tutorial covers the basics of building pages, adding components, and leveraging the power of the Lightning Design System.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/lightning_app_builder">Lightning App Builder Basics</a></li>
-            </ul>
-
-            <h2>Building Complex Workflows with Process Builder</h2>
-            <p>Process Builder allows you to automate complex business processes with just a few clicks. This tutorial explains how to create and manage workflows, set up approval processes, and trigger automatic actions based on defined criteria.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/business_process                _automation">Business Process Automation with Process Builder</a></li>
-            </ul>
-
-            <h2>Creating Reports and Dashboards</h2>
-            <p>Reports and dashboards are crucial for data-driven decision-making. This tutorial will teach you how to build custom reports, create interactive dashboards, and share insights with your team. You'll learn to visualize data trends and track key performance metrics effectively.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/reports_dashboards">Reports & Dashboards</a></li>
-            </ul>
-
-            <h2>Data Management and Data Security</h2>
-            <p>Learn how to manage your Salesforce data efficiently and securely. This tutorial covers data import/export, data deduplication, and best practices for data security. It will help you ensure the integrity and privacy of your business data.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/data_management">Data Management</a></li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/data_security">Data Security</a></li>
-            </ul>
-
-            <h2>Integrating Salesforce with Other Systems</h2>
-            <p>Salesforce integration enables seamless data flow between Salesforce and other systems. This tutorial explores different integration options, including APIs, MuleSoft, and Salesforce Connect, to help you connect Salesforce with your existing IT infrastructure.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/api_basics">API Basics</a></li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/mulesoft_integration">MuleSoft Integration</a></li>
-            </ul>
-
-            <h2>Using Salesforce Mobile App</h2>
-            <p>The Salesforce Mobile App allows you to stay connected with your business from anywhere. This tutorial will guide you through the setup and use of the mobile app, ensuring you can access and update your Salesforce data on the go.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/salesforce_mobile_app_basics">Salesforce Mobile App Basics</a></li>
-            </ul>
-
-            <h2>Enhancing User Experience with Lightning Design System</h2>
-            <p>The Lightning Design System helps you build consistent and user-friendly interfaces. This tutorial covers the fundamentals of using the Lightning Design System to create custom components and applications that offer a superior user experience.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/lightning_design_system">Lightning Design System Basics</a></li>
-            </ul>
-
-            <h2>Advanced Automation with Flow Builder</h2>
-            <p>Flow Builder allows you to create advanced automation flows with a visual interface. This tutorial explains how to design and implement complex business processes using Flow Builder, enabling you to automate repetitive tasks and improve operational efficiency.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/flow_basics">Flow Basics</a></li>
-            </ul>
-
-            <h2>Exploring Einstein Analytics</h2>
-            <p>Einstein Analytics provides advanced analytics capabilities within Salesforce. This tutorial guides you through setting up Einstein Analytics, creating datasets, building dashboards, and leveraging AI-powered insights to drive business decisions.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/einstein_analytics_basics">Einstein Analytics Basics</a></li>
-            </ul>
-
-            <h2>Deploying Changes with Change Sets</h2>
-            <p>Change Sets are used to deploy changes between Salesforce environments. This tutorial covers the process of creating and deploying Change Sets, ensuring your changes are tested and implemented smoothly across different orgs.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/change_sets">Change Sets Basics</a></li>
-            </ul>
-
-            <h2>Using AppExchange</h2>
-            <p>AppExchange is Salesforce's marketplace for third-party apps and solutions. This tutorial explores how to find, evaluate, and install apps from AppExchange to extend the functionality of your Salesforce instance.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/appexchange_basics">AppExchange Basics</a></li>
-            </ul>
-
-            <h2>Managing User Permissions</h2>
-            <p>Managing user permissions is crucial for maintaining security and data integrity. This tutorial explains how to set up roles, profiles, and permission sets to control access to different Salesforce features and data.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/data_security">Data Security</a></li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/permissions_basics">Permissions Basics</a></li>
-            </ul>
-
-            <h2>Automating Approval Processes</h2>
-            <p>Automating approval processes can streamline business operations. This tutorial guides you through creating approval processes in Salesforce, defining criteria, and automating the approval workflow to ensure efficient and consistent decision-making.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/approval_processes">Approval Processes</a></li>
-            </ul>
-
-            <h2>Exploring Salesforce Labs Solutions</h2>
-            <p>Salesforce Labs offers free, customizable solutions created by Salesforce employees. This tutorial introduces some popular Salesforce Labs solutions and explains how to install and customize them to meet your business needs.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/salesforce_labs">Salesforce Labs Solutions</a></li>
-            </ul>
-
-            <h2>Setting Up Salesforce Communities</h2>
-            <p>Salesforce Communities enable you to create online spaces for customers, partners, and employees to collaborate. This tutorial covers the basics of setting up a community, configuring its features, and managing community users.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/communities_basics">Communities Basics</a></li>
-            </ul>
-
-            <h2>Advanced Reporting with Custom Report Types</h2>
-            <p>Custom Report Types allow you to create complex reports that combine data from multiple objects. This tutorial explains how to create and use custom report types to generate advanced reports that meet specific business requirements.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/custom_reports">Custom Report Types</a></li>
-            </ul>
-
-            <h2>Leveraging Salesforce Shield for Security</h2>
-            <p>Salesforce Shield provides advanced security features such as encryption, monitoring, and auditing. This tutorial explores how to use Salesforce Shield to protect sensitive data and ensure compliance with security standards.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/shield_basics">Salesforce Shield Basics</a></li>
-            </ul>
-
-            <h2>Customizing Salesforce with Apex</h2>
-            <p>Apex is Salesforce's programming language that allows developers to execute flow and transaction control statements. This tutorial introduces the basics of Apex programming, including writing triggers, classes, and test methods.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/apex_basics">Apex Basics</a></li>
-            </ul>
-
-            <h2>Creating Lightning Web Components</h2>
-            <p>Lightning Web Components (LWC) provide a modern framework for building reusable components. This tutorial covers the fundamentals of LWC, including creating, deploying, and integrating components into your Salesforce environment.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/lightning_web_components">Lightning Web Components Basics</a></li>
-            </ul>
-
-            <h2>Exploring Salesforce Einstein</h2>
-            <p>Salesforce Einstein brings AI capabilities to the Salesforce platform. This tutorial explains how to use Einstein to automate tasks, predict outcomes, and provide insights, enhancing your decision-making and operational efficiency.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/einstein_basics">Einstein Basics</a></li>
-            </ul>
-
-            <h2>Advanced Topics and Continuous Learning</h2>
-            <p>Salesforce is a continuously evolving platform with new features and updates. Stay informed by exploring advanced topics and engaging with the Salesforce community. Continuous learning is essential to keep your skills up-to-date and leverage the full potential of Salesforce.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/trails/advanced_salesforce_topics">Advanced Salesforce Topics</a></li>
-            </ul>
+        <div class="navbar-row">
+            <a href="glossary.html">Glossary</a>
+            <a href="certification_guides.html">Certification Study Guides</a>
+            <a href="practice_exams.html">Practice Exams</a>
+            <a href="resources.html">Helpful Resources</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Me</a>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Julia Kleszcz. All rights reserved.</p>
-        </
+    <div class="content">
+        <h1>Step by Step Tutorials</h1>
+        <p>Welcome to the comprehensive guide to performing the 20 most frequently used tasks in Salesforce. This detailed tutorial is designed to help new users become proficient in using Salesforce while also serving as a valuable reference for seasoned users looking to refresh their skills. Each task is broken down into precise steps, ensuring you can follow along easily and understand every aspect of the process. From logging in to Salesforce to creating complex custom report types, this guide covers it all. Let's dive in and explore these essential Salesforce tasks!</p>
+
+        <h2>1. Logging in to Salesforce</h2>
+        <p><strong>Logging in to Salesforce is the first step to accessing your CRM platform and its powerful features. Follow these steps to log in securely:</strong></p>
+        <ol>
+            <li><strong>Open Your Browser:</strong>
+                <ul>
+                    <li>Launch your preferred web browser (e.g., Chrome, Firefox, Safari, Edge).</li>
+                </ul>
+            </li>
+            <li><strong>Navigate to the Login Page:</strong>
+                <ul>
+                    <li>In the address bar, type <a href="https://login.salesforce.com" target="_blank">https://login.salesforce.com</a> and press Enter.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Username:</strong>
+                <ul>
+                    <li>In the "Username" field, enter your Salesforce username.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Password:</strong>
+                <ul>
+                    <li>In the "Password" field, enter your Salesforce password.</li>
+                </ul>
+            </li>
+            <li><strong>Click Log In:</strong>
+                <ul>
+                    <li>Click the "Log In" button to access your Salesforce account.</li>
+                </ul>
+            </li>
+            <li><strong>Two-Factor Authentication:</strong>
+                <ul>
+                    <li>If prompted, complete the two-factor authentication (2FA) process by entering the code sent to your mobile device or email.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>2. Creating a New Account</h2>
+        <p><strong>An Account in Salesforce represents a business entity or organization that you have a relationship with. Follow these steps to create a new account:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Accounts Tab:</strong>
+                <ul>
+                    <li>Click on the "Accounts" tab in the navigation bar. If it's not visible, click on the App Launcher (grid icon) and search for "Accounts."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new account.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Account Information:</strong>
+                <ul>
+                    <li><strong>Account Name:</strong> Enter the name of the business.</li>
+                    <li><strong>Account Site:</strong> (Optional) Enter a description of the account site.</li>
+                    <li><strong>Type:</strong> Select the type of account (e.g., Customer, Partner).</li>
+                    <li><strong>Industry:</strong> Select the industry of the business.</li>
+                    <li><strong>Annual Revenue:</strong> Enter the annual revenue of the business.</li>
+                    <li><strong>Phone:</strong> Enter the business phone number.</li>
+                    <li><strong>Website:</strong> Enter the business website URL.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Account:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new account.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>3. Creating a New Contact</h2>
+        <p><strong>A Contact in Salesforce represents an individual associated with an Account. Follow these steps to create a new contact:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Contacts Tab:</strong>
+                <ul>
+                    <li>Click on the "Contacts" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Contacts."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new contact.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Contact Information:</strong>
+                <ul>
+                    <li><strong>First Name:</strong> Enter the contact’s first name.</li>
+                    <li><strong>Last Name:</strong> Enter the contact’s last name.</li>
+                    <li><strong>Account Name:</strong> Search and select the associated account.</li>
+                    <li><strong>Title:</strong> Enter the contact’s job title.</li>
+                    <li><strong>Email:</strong> Enter the contact’s email address.</li>
+                    <li><strong>Phone:</strong> Enter the contact’s phone number.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Contact:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new contact.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>4. Creating a New Opportunity</h2>
+        <p><strong>An Opportunity in Salesforce represents a potential sales deal. Follow these steps to create a new opportunity:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Opportunities Tab:</strong>
+                <ul>
+                    <li>Click on the "Opportunities" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Opportunities."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new opportunity.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Opportunity Information:</strong>
+                <ul>
+                    <li><strong>Opportunity Name:</strong> Enter a name for the opportunity.</li>
+                    <li><strong>Account Name:</strong> Search and select the associated account.</li>
+                    <li><strong>Close Date:</strong> Select the expected close date.</li>
+                    <li><strong>Stage:</strong> Select the stage of the opportunity (e.g., Prospecting, Negotiation).</li>
+                    <li><strong>Amount:</strong> Enter the potential deal amount.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Opportunity:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new opportunity.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>5. Creating a New Lead</h2>
+        <p><strong>A Lead in Salesforce represents a potential customer who has shown interest in your products or services. Follow these steps to create a new lead:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Leads Tab:</strong>
+                <ul>
+                    <li>Click on the "Leads" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Leads."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new lead.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Lead Information:</strong>
+                <ul>
+                    <li><strong>First Name:</strong> Enter the lead’s                    <li><strong>First Name:</strong> Enter the lead’s first name.</li>
+                    <li><strong>Last Name:</strong> Enter the lead’s last name.</li>
+                    <li><strong>Company:</strong> Enter the lead’s company name.</li>
+                    <li><strong>Title:</strong> Enter the lead’s job title.</li>
+                    <li><strong>Email:</strong> Enter the lead’s email address.</li>
+                    <li><strong>Phone:</strong> Enter the lead’s phone number.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Lead:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new lead.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>6. Converting a Lead to an Opportunity</h2>
+        <p><strong>Converting a lead to an opportunity involves transforming a potential customer into an active sales deal. Follow these steps:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Leads Tab:</strong>
+                <ul>
+                    <li>Click on the "Leads" tab in the navigation bar.</li>
+                </ul>
+            </li>
+            <li><strong>Select the Lead:</strong>
+                <ul>
+                    <li>Click on the lead you want to convert.</li>
+                </ul>
+            </li>
+            <li><strong>Click Convert:</strong>
+                <ul>
+                    <li>Click the "Convert" button.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Conversion Information:</strong>
+                <ul>
+                    <li><strong>Account Name:</strong> Confirm the account name or create a new one.</li>
+                    <li><strong>Opportunity Name:</strong> Enter the opportunity name.</li>
+                    <li><strong>Close Date:</strong> Select the expected close date.</li>
+                    <li><strong>Stage:</strong> Select the stage of the opportunity.</li>
+                </ul>
+            </li>
+            <li><strong>Convert the Lead:</strong>
+                <ul>
+                    <li>Click the "Convert" button to complete the conversion.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>7. Creating a New Case</h2>
+        <p><strong>A Case in Salesforce represents a customer’s question, feedback, or issue. Follow these steps to create a new case:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Cases Tab:</strong>
+                <ul>
+                    <li>Click on the "Cases" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Cases."</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new case.</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Case Information:</strong>
+                <ul>
+                    <li><strong>Case Origin:</strong> Select the source of the case (e.g., Phone, Email, Web).</li>
+                    <li><strong>Subject:</strong> Enter a brief summary of the case.</li>
+                    <li><strong>Description:</strong> Enter a detailed description of the case.</li>
+                    <li><strong>Contact Name:</strong> Search and select the associated contact.</li>
+                    <li><strong>Account Name:</strong> Search and select the associated account.</li>
+                    <li><strong>Priority:</strong> Select the priority level (e.g., Low, Medium, High).</li>
+                </ul>
+            </li>
+            <li><strong>Save the Case:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the new case.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>8. Logging a Call</h2>
+        <p><strong>Logging a call helps you keep track of your interactions with customers. Follow these steps:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Related Record:</strong>
+                <ul>
+                    <li>Go to the record (e.g., Contact, Account) related to the call.</li>
+                </ul>
+            </li>
+            <li><strong>Click Log a Call:</strong>
+                <ul>
+                    <li>In the activity section, click "Log a Call."</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Call Information:</strong>
+                <ul>
+                    <li><strong>Subject:</strong> Enter the subject of the call.</li>
+                    <li><strong>Comments:</strong> Enter detailed notes about the call.</li>
+                    <li><strong>Related To:</strong> Select the related record.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Call Log:</strong>
+                <ul>
+                    <li>Click the "Save" button to log the call.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>9. Scheduling an Event</h2>
+        <p><strong>An Event in Salesforce is a calendar item representing a meeting, call, or other scheduled activities. Follow these steps to schedule an event:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Related Record:</strong>
+                <ul>
+                    <li>Go to the record (e.g., Contact, Account) related to the event.</li>
+                </ul>
+            </li>
+            <li><strong>Click New Event:</strong>
+                <ul>
+                    <li>In the activity section, click "New Event."</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Event Information:</strong>
+                <ul>
+                    <li><strong>Subject:</strong> Enter the subject of the event.</li>
+                    <li><strong>Start Date/Time:</strong> Select the start date and time.</li>
+                    <li><strong>End Date/Time:</strong> Select the end date and time.</li>
+                    <li><strong>Location:</strong> Enter the location of the event.</li>
+                    <li><strong>Description:</strong> Enter a detailed description of the event.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Event:</strong>
+                <ul>
+                    <li>Click the "Save" button to schedule the event.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>10. Creating a New Task</h2>
+        <p><strong>A Task in Salesforce is an activity that needs to be completed. Follow these steps to create a new task:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Related Record:</strong>
+                <ul>
+                    <li>Go to the record (e.g., Contact, Account) related to the task.</li>
+                </ul>
+            </li>
+            <li><strong>Click New Task:</strong>
+                <ul>
+                    <li>In the activity section, click "New Task."</li>
+                </ul>
+            </li>
+            <li><strong>Fill in Task Information:</strong>
+                <ul>
+                    <li><strong>Subject:</strong> Enter the subject of the task.</li>
+                    <li><strong>Due Date:</strong> Select the due date for the task.</li>
+                    <li><strong>Priority:</strong> Select the priority level (e.g., Low, Normal, High).</li>
+                    <li><strong>Status:</strong> Select the status (e.g., Not Started, In Progress).</li>
+                </ul>
+            </li>
+            <li><strong>Save the Task:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the task.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>11. Running a Report</h2>
+        <p><strong>A Report in Salesforce is a list of records that meet specific criteria, displayed in a tabular, summary, or matrix format. Follow these steps to run a report:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Reports Tab:</strong>
+                <ul>
+                    <li>Click on the "Reports" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Reports."</li>
+                </ul>
+            </li>
+            <li><strong>Click New Report:</strong>
+                <ul>
+                    <li>Click the "New Report" button.</li>
+                </ul>
+            </li>
+            <li><strong>Select Report Type:</strong>
+                <ul>
+                    <li>Choose the type of report (e.g., Accounts, Opportunities) and click "Continue."</li>
+                </ul>
+            </li>
+            <li><strong>Add Filters:</strong>
+                <ul>
+                    <li>Add filters to narrow down the data.</li>
+                </ul>
+            </li>
+            <li><strong>Add Columns:</strong>
+                <ul>
+                    <li>Select the columns you want to display in the report.</li>
+                </ul>
+            </li>
+            <li><strong>Run the Report            <li><strong>Run the Report:</strong>
+                <ul>
+                    <li>Click the "Run" button to generate the report.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Report:</strong>
+                <ul>
+                    <li>Click the "Save" button, enter a report name, and click "Save."</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>12. Creating a Dashboard</h2>
+        <p><strong>A Dashboard in Salesforce is a visual representation of your reports. Follow these steps to create a dashboard:</strong></p>
+        <ol>
+            <li><strong>Navigate to the Dashboards Tab:</strong>
+                <ul>
+                    <li>Click on the "Dashboards" tab in the navigation bar. If it's not visible, click on the App Launcher and search for "Dashboards."</li>
+                </ul>
+            </li>
+            <li><strong>Click New Dashboard:</strong>
+                <ul>
+                    <li>Click the "New Dashboard" button.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Dashboard Information:</strong>
+                <ul>
+                    <li><strong>Name:</strong> Enter a name for the dashboard.</li>
+                    <li><strong>Folder:</strong> Select a folder to save the dashboard in.</li>
+                </ul>
+            </li>
+            <li><strong>Create Dashboard:</strong>
+                <ul>
+                    <li>Click the "Create" button.</li>
+                </ul>
+            </li>
+            <li><strong>Add Components:</strong>
+                <ul>
+                    <li><strong>Component Type:</strong> Select the type of component (e.g., chart, gauge, table).</li>
+                    <li><strong>Report:</strong> Select the source report for the component.</li>
+                    <li><strong>Configure Component:</strong> Configure the component settings (e.g., chart type, axis labels).</li>
+                </ul>
+            </li>
+            <li><strong>Save and Run Dashboard:</strong>
+                <ul>
+                    <li>Click the "Save" button and then click "Done" to view the dashboard.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>13. Creating a Custom Field</h2>
+        <p><strong>A Custom Field in Salesforce is a field you create to store specific information on Standard or Custom Objects. Follow these steps to create a custom field:</strong></p>
+        <ol>
+            <li><strong>Navigate to Object Manager:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner and select "Object Manager."</li>
+                </ul>
+            </li>
+            <li><strong>Select Object:</strong>
+                <ul>
+                    <li>Find and select the object you want to add the custom field to (e.g., Account, Contact).</li>
+                </ul>
+            </li>
+            <li><strong>Click Fields & Relationships:</strong>
+                <ul>
+                    <li>Click the "Fields & Relationships" tab.</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new custom field.</li>
+                </ul>
+            </li>
+            <li><strong>Select Field Type:</strong>
+                <ul>
+                    <li>Choose the field type (e.g., Text, Number, Date) and click "Next."</li>
+                </ul>
+            </li>
+            <li><strong>Enter Field Details:</strong>
+                <ul>
+                    <li><strong>Field Label:</strong> Enter the label for the field.</li>
+                    <li><strong>Field Name:</strong> This is auto-generated but can be edited.</li>
+                    <li><strong>Field Attributes:</strong> Enter any additional attributes (e.g., length, default value).</li>
+                </ul>
+            </li>
+            <li><strong>Set Field-Level Security:</strong>
+                <ul>
+                    <li>Select the profiles that can see and edit this field.</li>
+                </ul>
+            </li>
+            <li><strong>Add to Page Layouts:</strong>
+                <ul>
+                    <li>Select the page layouts where this field should appear.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Field:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the custom field.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>14. Creating a Workflow Rule</h2>
+        <p><strong>A Workflow Rule in Salesforce automates processes based on specific criteria. Follow these steps to create a workflow rule:</strong></p>
+        <ol>
+            <li><strong>Navigate to Setup:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner.</li>
+                </ul>
+            </li>
+            <li><strong>Search for Workflow Rules:</strong>
+                <ul>
+                    <li>In the Quick Find box, type "Workflow Rules" and select it from the results.</li>
+                </ul>
+            </li>
+            <li><strong>Click New Rule:</strong>
+                <ul>
+                    <li>Click the "New Rule" button.</li>
+                </ul>
+            </li>
+            <li><strong>Select Object:</strong>
+                <ul>
+                    <li>Choose the object the rule applies to (e.g., Account, Contact) and click "Next."</li>
+                </ul>
+            </li>
+            <li><strong>Enter Rule Criteria:</strong>
+                <ul>
+                    <li><strong>Rule Name:</strong> Enter a name for the rule.</li>
+                    <li><strong>Criteria:</strong> Define the criteria that trigger the rule.</li>
+                </ul>
+            </li>
+            <li><strong>Add Workflow Actions:</strong>
+                <ul>
+                    <li><strong>Immediate Actions:</strong> Add actions that occur immediately when the rule is triggered (e.g., field updates, email alerts).</li>
+                    <li><strong>Time-Dependent Actions:</strong> Add actions that occur after a specified time (e.g., 10 days after rule trigger).</li>
+                </ul>
+            </li>
+            <li><strong>Activate the Rule:</strong>
+                <ul>
+                    <li>Click the "Activate" button to enable the workflow rule.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>15. Creating an Email Template</h2>
+        <p><strong>An Email Template in Salesforce is a pre-defined email format that you can use for sending standardized emails. Follow these steps to create an email template:</strong></p>
+        <ol>
+            <li><strong>Navigate to Setup:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner.</li>
+                </ul>
+            </li>
+            <li><strong>Search for Email Templates:</strong>
+                <ul>
+                    <li>In the Quick Find box, type "Email Templates" and select it from the results.</li>
+                </ul>
+            </li>
+            <li><strong>Click New Template:</strong>
+                <ul>
+                    <li>Click the "New Template" button.</li>
+                </ul>
+            </li>
+            <li><strong>Select Template Type:</strong>
+                <ul>
+                    <li>Choose the type of template (e.g., Text, HTML with Letterhead, Custom).</li>
+                </ul>
+            </li>
+            <li><strong>Enter Template Information:</strong>
+                <ul>
+                    <li><strong>Folder:</strong> Select a folder to save the template in.</li>
+                    <li><strong>Available For Use:</strong> Check this box to make the template available for use.</li>
+                    <li><strong>Email Template Name:</strong> Enter a name for the template.</li>
+                    <li><strong>Subject:</strong> Enter the email subject.</li>
+                </ul>
+            </li>
+            <li><strong>Compose Email:</strong>
+                <ul>
+                    <li>Enter the email body. Use merge fields to personalize the email (e.g., {!Contact.FirstName}).</li>
+                </ul>
+            </li>
+            <li><strong>Save the Template:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the email template.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>16. Setting Up Email Alerts</h2>
+        <p><strong>An Email Alert in Salesforce is a workflow action that sends an email when triggered by a workflow rule or process. Follow these steps to set up an email alert:</strong></p>
+        <ol>
+            <li><strong>Navigate to Setup:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner.</li>
+                </ul>
+            </li>
+            <li><strong>Search for Email Alerts:</strong>
+                <ul>
+                    <li>In the Quick Find box, type "Email Alerts" and select it from the results.</li>
+                </ul>
+            </li>
+            <li><strong>Click New            <li><strong>Click New Email Alert:</strong>
+                <ul>
+                    <li>Click the "New Email Alert" button.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Email Alert Information:</strong>
+                <ul>
+                    <li><strong>Description:</strong> Enter a description for the email alert.</li>
+                    <li><strong>Email Template:</strong> Select an email template.</li>
+                    <li><strong>Recipients:</strong> Add recipients (e.g., users, roles, email fields).</li>
+                </ul>
+            </li>
+            <li><strong>Save the Email Alert:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the email alert.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>17. Creating a Validation Rule</h2>
+        <p><strong>A Validation Rule in Salesforce ensures data entered into fields meets specific criteria before it can be saved. Follow these steps to create a validation rule:</strong></p>
+        <ol>
+            <li><strong>Navigate to Object Manager:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner and select "Object Manager."</li>
+                </ul>
+            </li>
+            <li><strong>Select Object:</strong>
+                <ul>
+                    <li>Find and select the object you want to add the validation rule to (e.g., Account, Contact).</li>
+                </ul>
+            </li>
+            <li><strong>Click Validation Rules:</strong>
+                <ul>
+                    <li>Click the "Validation Rules" tab.</li>
+                </ul>
+            </li>
+            <li><strong>Click New:</strong>
+                <ul>
+                    <li>Click the "New" button to create a new validation rule.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Rule Information:</strong>
+                <ul>
+                    <li><strong>Rule Name:</strong> Enter a name for the rule.</li>
+                    <li><strong>Description:</strong> Enter a description of what the rule does.</li>
+                    <li><strong>Error Condition Formula:</strong> Enter the formula that defines the validation condition.</li>
+                    <li><strong>Error Message:</strong> Enter the message that will be displayed when the rule is violated.</li>
+                    <li><strong>Error Location:</strong> Select where the error message should appear.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Rule:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the validation rule.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>18. Importing Data Using Data Loader</h2>
+        <p><strong>Data Loader is a client application used to import, export, update, and delete Salesforce data. Follow these steps to import data using Data Loader:</strong></p>
+        <ol>
+            <li><strong>Download and Install Data Loader:</strong>
+                <ul>
+                    <li>Go to the Salesforce website, download Data Loader, and install it on your computer.</li>
+                </ul>
+            </li>
+            <li><strong>Log in to Data Loader:</strong>
+                <ul>
+                    <li>Open Data Loader and log in using your Salesforce credentials.</li>
+                </ul>
+            </li>
+            <li><strong>Select Operation:</strong>
+                <ul>
+                    <li>Choose the operation you want to perform (e.g., Insert, Update, Upsert).</li>
+                </ul>
+            </li>
+            <li><strong>Select Object:</strong>
+                <ul>
+                    <li>Select the object you want to import data into (e.g., Account, Contact).</li>
+                </ul>
+            </li>
+            <li><strong>Choose CSV File:</strong>
+                <ul>
+                    <li>Click "Browse" and select the CSV file containing the data you want to import.</li>
+                </ul>
+            </li>
+            <li><strong>Map Fields:</strong>
+                <ul>
+                    <li>Map the fields in your CSV file to the corresponding Salesforce fields.</li>
+                </ul>
+            </li>
+            <li><strong>Start Import:</strong>
+                <ul>
+                    <li>Click "Next" and then "Finish" to start the import process.</li>
+                </ul>
+            </li>
+            <li><strong>Review Results:</strong>
+                <ul>
+                    <li>Check the success and error logs to ensure the data was imported correctly.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>19. Exporting Data Using Data Loader</h2>
+        <p><strong>Follow these steps to export data using Data Loader:</strong></p>
+        <ol>
+            <li><strong>Open Data Loader:</strong>
+                <ul>
+                    <li>Launch Data Loader on your computer.</li>
+                </ul>
+            </li>
+            <li><strong>Log in to Data Loader:</strong>
+                <ul>
+                    <li>Log in using your Salesforce credentials.</li>
+                </ul>
+            </li>
+            <li><strong>Select Export:</strong>
+                <ul>
+                    <li>Choose the "Export" operation.</li>
+                </ul>
+            </li>
+            <li><strong>Select Object:</strong>
+                <ul>
+                    <li>Select the object you want to export data from (e.g., Account, Contact).</li>
+                </ul>
+            </li>
+            <li><strong>Choose Output Directory:</strong>
+                <ul>
+                    <li>Click "Browse" and select the directory where you want to save the exported file.</li>
+                </ul>
+            </li>
+            <li><strong>Select Fields and Conditions:</strong>
+                <ul>
+                    <li>Choose the fields you want to export and set any conditions (e.g., filters).</li>
+                </ul>
+            </li>
+            <li><strong>Start Export:</strong>
+                <ul>
+                    <li>Click "Next" and then "Finish" to start the export process.</li>
+                </ul>
+            </li>
+            <li><strong>Review Exported Data:</strong>
+                <ul>
+                    <li>Open the exported CSV file to review the data.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>20. Creating a Custom Report Type</h2>
+        <p><strong>A Custom Report Type in Salesforce allows you to create custom reports with specific data relationships. Follow these steps to create a custom report type:</strong></p>
+        <ol>
+            <li><strong>Navigate to Setup:</strong>
+                <ul>
+                    <li>Click the gear icon (Setup) in the top-right corner.</li>
+                </ul>
+            </li>
+            <li><strong>Search for Report Types:</strong>
+                <ul>
+                    <li>In the Quick Find box, type "Report Types" and select it from the results.</li>
+                </ul>
+            </li>
+            <li><strong>Click New Custom Report Type:</strong>
+                <ul>
+                    <li>Click the "New Custom Report Type" button.</li>
+                </ul>
+            </li>
+            <li><strong>Enter Report Type Information:</strong>
+                <ul>
+                    <li><strong>Primary Object:</strong> Select the primary object for the report.</li>
+                    <li><strong>Report Type Label:</strong> Enter a label for the report type.</li>
+                    <li><strong>Report Type Name:</strong> This is auto-generated but can be edited.</li>
+                    <li><strong>Description:</strong> Enter a description of the report type.</li>
+                    <li><strong>Store in Category:</strong> Select the category to store the report type in.</li>
+                    <li><strong>Deployment Status:</strong> Choose "Deployed" to make the report type available for use.</li>
+                </ul>
+            </li>
+            <li><strong>Define Report Relationships:</strong>
+                <ul>
+                    <li>Add and define the relationships between the primary object and other related objects.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Report Type:</strong>
+                <ul>
+                    <li>Click the "Save" button to create the custom report type.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="footer-image">
+        <img src="images/footnote.jpg" alt="Footer Image">
+    </div>
+</body>
+</html>
