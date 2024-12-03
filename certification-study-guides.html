@@ -3,97 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certification Study Guides - Julia Kleszcz</title>
+    <title>Certification Study Guides</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add custom styles for the book images and layout */
+        .book-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .book-links a {
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            max-width: 300px;
+        }
+
+        .book-links img {
+            max-width: 150px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .book-links img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-links h3 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .book-links p {
+            font-size: 14px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/Julia-Kleszcz.webp" alt="Julia Kleszcz Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume and Credentials</a></li>
-                    <li><a href="getting-started.html">Getting Started with Salesforce</a></li>
-                    <li><a href="certification-study-guides.html">Certification Study Guides</a></li>
-                    <li><a href="step-by-step-tutorials.html">Step by Step Tutorials</a></li>
-                    <li><a href="video-tutorials.html">Video Tutorials</a></li>
-                    <li><a href="practice-exams.html">Salesforce Practice Exams</a></li>
-                    <li><a href="helpful-resources.html">Helpful Resources</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="header-image">
+        <img src="images/title.jpg" alt="Title Header Image">
+    </div>
+    <div class="navbar">
+        <div class="navbar-row">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume and Credentials</a>
+            <a href="salesforce.html">Getting Started with Salesforce</a>
+            <a href="tutorials.html">Step by Step Tutorials</a>
+            <a href="videos.html">Video Tutorials</a>
+            <a href="templates.html">Templates</a>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h1>Certification Study Guides</h1>
-            <p>Preparing for Salesforce certification can be a transformative step in your career, offering a competitive edge in the field of CRM and cloud computing. This guide is designed to provide you with a comprehensive approach to mastering the Salesforce platform and achieving certification success.</p>
-            <img src="images/File 00017.jpg" alt="Study Guide">
-
-            <h2>Understanding the Certification Path</h2>
-            <p>Salesforce offers various certification paths, each tailored to different roles such as Administrator, Developer, Architect, and Consultant. Understanding the specific requirements and scope of each certification will help you choose the right path and focus your study efforts effectively.</p>
-
-            <h2>Starting with Trailhead</h2>
-            <p>Trailhead is Salesforce's free online learning platform. It offers a structured and gamified approach to learning, with modules, projects, and superbadges that cover all aspects of the Salesforce ecosystem. Starting with Trailhead will give you a solid foundation and help you become familiar with the Salesforce interface and functionality.</p>
-            <ul>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/starting-with-salesforce">Starting with Salesforce</a> - Learn the basics of Salesforce and how to navigate the platform.</li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/accounts_contacts_leads">Accounts, Contacts, and Leads</a> - Understand how to manage your customer information in Salesforce.</li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/sales_cloud_basics">Sales Cloud Basics</a> - Get an overview of Sales Cloud features and how to use them to manage your sales process.</li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/service_basics">Service Cloud Basics</a> - Learn about the tools available in Service Cloud to provide exceptional customer service.</li>
-                <li><a href="https://trailhead.salesforce.com/en/content/learn/modules/marketing_cloud_journey_builder_basics">Marketing Cloud Journey Builder Basics</a> - Discover how to create automated customer journeys with Marketing Cloud.</li>
-            </ul>
-
-            <h2>Creating a Study Plan</h2>
-            <p>A well-structured study plan is crucial for effective learning. Break down the exam topics into manageable sections and            allocate specific times for each topic. Ensure you include time for review and practice exams. A study plan will help you stay organized and track your progress.</p>
-
-            <h2>Joining the Salesforce Community</h2>
-            <p>The Salesforce community is a valuable resource for learning and support. Join online forums, local user groups, and attend Salesforce events such as Dreamforce and World Tours. Engaging with the community will provide you with insights, tips, and encouragement from fellow learners and certified professionals.</p>
-
-            <h2>Utilizing Official Study Materials</h2>
-            <p>Salesforce provides official study materials, including study guides, exam outlines, and certification handbooks. These resources are specifically designed to align with the exam objectives and are essential for thorough preparation. Make sure to download and review these materials regularly.</p>
-
-            <h2>Hands-On Practice</h2>
-            <p>Practical experience is key to understanding Salesforce concepts. Use a Salesforce Developer Edition or a Trailhead Playground to practice what you learn. Working on real-world scenarios and creating sample applications will reinforce your knowledge and skills.</p>
-
-            <h2>Taking Practice Exams</h2>
-            <p>Practice exams are an excellent way to test your knowledge and identify areas that need improvement. They simulate the format and timing of the actual exam, helping you become comfortable with the exam environment. Use both Salesforce's official practice exams and third-party resources for a variety of questions.</p>
-
-            <h2>Focusing on Key Areas</h2>
-            <p>Each certification exam has specific areas of focus. For example, the Salesforce Administrator exam emphasizes user management, security, and automation. Pay special attention to these key areas and ensure you understand them thoroughly. Use the exam guide to identify the weight of each topic and prioritize accordingly.</p>
-
-            <h2>Reviewing and Revising</h2>
-            <p>Regular review and revision are crucial for retaining information. Schedule periodic reviews of the topics you have covered. Use flashcards, notes, and mind maps to reinforce your understanding. Revision sessions should focus on weak areas and consolidate your strengths.</p>
-
-            <h2>Staying Updated</h2>
-            <p>Salesforce frequently updates its platform with new features and functionalities. Staying updated with the latest releases and changes is important. Follow Salesforce blogs, release notes, and official announcements to ensure your knowledge remains current and relevant.</p>
-
-            <h2>Taking Care of Your Well-Being</h2>
-            <p>Studying for a certification can be intense. Make sure to take regular breaks, stay hydrated, and get enough sleep. A healthy body and mind will improve your focus and retention. Balance your study schedule with relaxation and physical activity.</p>
-
-            <h2>Simulating the Exam Environment</h2>
-            <p>On the day of the exam, simulate the exam environment to reduce anxiety. Ensure you have a quiet and comfortable place to take the exam, and practice managing your time effectively. Familiarize yourself with the exam interface if it's an online proctored exam.</p>
-
-            <h2>Reviewing Exam Tips and Tricks</h2>
-            <p>Many certified professionals share their exam experiences and tips online. Reviewing these tips can provide valuable insights into exam strategies, common pitfalls, and effective study techniques. Learning from others' experiences can enhance your preparation.</p>
-
-            <h2>Believing in Yourself</h2>
-            <p>Confidence plays a significant role in exam success. Trust in your preparation and believe in your abilities. Positive thinking can boost your performance and help you stay calm under pressure. Remember that certification is a journey, and each step brings you closer to your goal.</p>
-
-            <h2>Planning for Post-Certification</h2>
-            <p>Certification is just the beginning. Plan for continuous learning and career growth. Set new goals, pursue advanced certifications, and seek opportunities to apply your skills in real-world projects. Staying engaged and proactive will help you make the most of your Salesforce journey.</p>
+        <div class="navbar-row">
+            <a href="glossary.html">Glossary</a>
+            <a href="study-guides.html">Certification Study Guides</a>
+            <a href="exams.html">Practice Exams</a>
+            <a href="resources.html">Helpful Resources</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Me</a>
         </div>
-    </main>
+    </div>
+    <div class="content">
+        <h1>Certification Study Guides</h1>
+        <p>Hey there! I’m Julia, your friendly neighborhood Salesforce Sensei. Whether you’re just getting started or looking to sharpen your skills, this series is designed to be your ultimate guide through the Salesforce universe. Each book is crafted with a mix of professional insight and a dash of fun to keep you motivated on your learning journey. Think of me as your personal mentor, helping you navigate the highs, lows, and “aha!” moments of mastering Salesforce.</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Julia Kleszcz. All rights reserved.</p>
+        <!-- Book links section -->
+        <div class="book-links">
+            <a href="downloads/book1.epub" download>
+                <img src="images/book1.jpg" alt="Salesforce Administrator Exam Preparation">
+                <h3>Salesforce Administrator Exam Preparation</h3>
+                <p>You’re ready to take the leap and earn that Salesforce Administrator certification. This book has everything you need – from foundational knowledge to insider tips – to ace the exam. Let’s break it down together and get you certified with confidence.</p>
+            </a>
+            <a href="downloads/book8.epub" download>
+                <img src="images/book8.PNG" alt="Salesforce Sensei: 7 Salesforce Administrator Certification Practice Exams">
+                <h3>Salesforce Sensei: 7 Salesforce Administrator Certification Practice Exams</h3>
+                <p>Feeling a little nervous about the real deal? Practice makes perfect! Dive into these seven practice exams that mirror the real thing. We’ll work through the tough questions, trick scenarios, and nail-biting moments so you’re 100% ready when it’s showtime.</p>
+            </a>
+            <a href="downloads/book4.epub" download>
+                <img src="images/book4.jpg" alt="Salesforce Sensei: Advanced Salesforce Administrator Exam Preparation">
+                <h3>Salesforce Sensei: Advanced Salesforce Administrator Exam Preparation</h3>
+                <p>So you’ve passed the basics, but you’re hungry for more. This book is for those of you ready to level up and take on advanced admin skills. Together, we’ll explore the finer details, ensuring you’re not just certified but a true expert.</p>
+            </a>
+            <a href="downloads/book6.epub" download>
+                <img src="images/book6.PNG" alt="Salesforce Sensei: Mastering Salesforce Marketing Cloud">
+                <h3>Salesforce Sensei: Mastering Salesforce Marketing Cloud</h3>
+                <p>Marketing is the heartbeat of any business, and mastering Marketing Cloud is key to delivering powerful, personalized campaigns. I’ll show you how to harness Salesforce’s marketing magic, turning data into creative and effective customer journeys.</p>
+            </a>
+            <a href="downloads/book2.epub" download>
+                <img src="images/book2.PNG" alt="Salesforce Sensei: Mastering Salesforce CPQ">
+                <h3>Salesforce Sensei: Mastering Salesforce CPQ</h3>
+                <p>Configure, Price, Quote (CPQ) is where deals get done! In this book, we’ll break down the complexity of CPQ into simple, actionable steps. Get ready to set up seamless pricing models, automate sales processes, and close deals faster than ever.</p>
+            </a>
+            <a href="downloads/book5.epub" download>
+                <img src="images/book5.PNG" alt="Salesforce Sensei: Mastering Data Cleanliness and Integrity">
+                <h3>Salesforce Sensei: Mastering Data Cleanliness and Integrity</h3>
+                <p>Data is the lifeblood of your CRM, but only if it’s clean and reliable. Let’s dive into the strategies and tools that keep your data pristine, accurate, and ready to fuel your Salesforce workflows. Together, we’ll eliminate duplicates, errors, and inconsistencies.</p>
+            </a>
+            <a href="downloads/book10.epub" download>
+                <img src="images/book10.jpg" alt="Salesforce Sensei: Mastering Dashboard Building">
+                <h3>Salesforce Sensei: Mastering Dashboard Building</h3>
+                <p>Dashboards are your window into the health of your business. Whether you’re looking to track KPIs or dive deep into performance metrics, this guide helps you build stunning, insightful dashboards that bring your data to life.</p>
+            </a>
+            <a href="downloads/book3.epub" download>
+                <img src="images/book3.jpg" alt="Salesforce Sensei: Mastering Salesforce Data Security">
+                <h3>Salesforce Sensei: Mastering Salesforce Data Security</h3>
+                <p>Security is non-negotiable in today’s digital world. In this guide, we’ll explore the best practices for keeping your Salesforce environment secure, from managing permissions to implementing robust data protection strategies. Let’s safeguard your data, together.</p>
+            </a>
+            <a href="downloads/book7.epub" download>
+                <img src="images/book7.jpg" alt="Salesforce Sensei: Mastering Salesforce Automation">
+                <h3>Salesforce Sensei: Mastering Salesforce Automation</h3>
+                <p>Automation is the key to scaling efficiency. I’ll show you how to design powerful, automated workflows that free up your time, eliminate repetitive tasks, and make your Salesforce experience smoother and more productive.</p>
+            </a>
+            <a href="downloads/book9.epub" download>
+                <img src="images/book9.jpg" alt="Salesforce Sensei: Mastering Platform App Builder">
+                <h3>Salesforce Sensei: Mastering Platform App Builder</h3>
+                <p>Ready to go beyond out-of-the-box solutions? This guide dives into the world of custom app development with Salesforce’s Platform App Builder. Together, we’ll create tailored solutions that fit your unique business needs and take your Salesforce skills to the next level.</p>
+            </a>
         </div>
-    </footer>
+    </div>
+    <div class="footer-image">
+        <img src="images/footnote.jpg" alt="Footer Image">
+    </div>
 </body>
 </html>
